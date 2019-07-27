@@ -281,86 +281,34 @@ body {
     opacity: 1;
   }
 }
+.reveal {
+  height: 0;
+}
+
 .reveal__content {
   overflow: hidden;
   height: 0;
-  -webkit-animation: slide 0.9s 1s forwards;
-          animation: slide 0.9s 1s forwards;
+  -webkit-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
 }
 
 .reveal__content > * {
-  -webkit-animation: scale 0.9s 1s forwards;
-          animation: scale 0.9s 1s forwards;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transition: all 0.9s;
 }
 
-.reveal-text {
-  overflow: hidden;
+.reveal.loaded .reveal__content {
+  height: 100%;
 }
-
-.reveal-text__content {
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-          transform: translateY(100%);
-  -webkit-animation: reveal 1s cubic-bezier(0.76, 0.04, 0.4, 1) forwards;
-          animation: reveal 1s cubic-bezier(0.76, 0.04, 0.4, 1) forwards;
-}
-
-@-webkit-keyframes reveal {
-  from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes reveal {
-  from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-@-webkit-keyframes slide {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100%;
-  }
-}
-@keyframes slide {
-  from {
-    height: 0;
-  }
-  to {
-    height: 100%;
-  }
-}
-@-webkit-keyframes scale {
-  0% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@keyframes scale {
-  0% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+.reveal.loaded .reveal__content > * {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 @media screen and (max-width: 1365px) {
   html {
