@@ -7,8 +7,12 @@ document.ready(function() {
     once: true
   });
   initExperienceAnimation();
-  initRevealImage();
 });
+
+window.addEventListener("load", function() {
+  initRevealImage();
+}, false);
+
 
 function initFlickity() {
   var aboutSliders = [];
@@ -57,9 +61,10 @@ function initFlickity() {
 
 
 function initRevealImage() {
-  var selectors = document.querySelectorAll('.reveal');
-  for(var el of selectors) {
-    el.style.height = el.querySelector('.reveal__content > *').scrollHeight + 'px';
+  var selectors = document.querySelectorAll(".reveal");
+  for (var el of selectors) {
+    el.classList.add('loaded');
+    el.style.height = el.querySelector(".reveal__content > *").scrollHeight + "px";
   }
 }
 
