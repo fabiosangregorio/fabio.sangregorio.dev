@@ -973,3 +973,14 @@ body {
 .projects .h1 {
   margin-bottom: 1.875rem;
 }
+
+.home .atf {
+  min-height: 43rem;
+}
+
+@media (max-width: 767px) {
+  .home .atf {
+    min-width: none;
+  }
+}
+  
