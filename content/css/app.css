@@ -984,3 +984,26 @@ body {
   }
 }
   
+.reveal-text {
+  overflow: hidden;
+}
+.reveal-text:nth-child(2) .reveal__content {
+  animation-delay: 0.6s;
+}
+.reveal-text:nth-child(3) .reveal__content {
+  animation-delay: 1.2s;
+}
+
+.reveal-text__content {
+  transform: translateY(100%);
+  animation: reveal 1s cubic-bezier(0.76, 0.04, 0.4, 1) forwards;
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
