@@ -675,7 +675,7 @@ body {
 }
 @media screen and (max-width: 991px) {
   .home .atf {
-    margin-top: 30vh;
+    margin-top: 15vh;
   }
   .home .atf__hand {
     margin-left: 0;
@@ -980,7 +980,7 @@ body {
 
 @media (max-width: 767px) {
   .home .atf {
-    min-width: none;
+    min-height: 0;
   }
 }
   
