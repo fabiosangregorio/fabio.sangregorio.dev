@@ -20,9 +20,7 @@
 	 <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" rel="stylesheet">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="/content/css/flickity.min.css" media="screen">
-	<link rel="stylesheet" href="/content/css/aos.css" media="screen">
-	<link rel="stylesheet" href="/content/css/app.css">
+	<link rel="stylesheet" href="/css/bundle.min.css">
 
 	<title>Fabio.</title>
 </head>
@@ -31,10 +29,10 @@
 
 	<header class="page-header">
   <a href="/" class="logo">
-    <img src="/content/images/logo.svg" alt="Fabio.">
+    <img src="/images/logo.svg" alt="Fabio.">
   </a>
   <div class="page-header__links">
-    <a href="/about">about</a>
+    <a href="/about/index.html">about</a>
     <a href="mailto:fabio@sangregorio.dev" target="_blank">contact</a>
   </div>
 </header> 
@@ -48,9 +46,9 @@
       <div class="reveal-text">
         <div class="reveal-text__content">
           Hey there!  
-          <a href="https://codepen.io/fabiosangregorio/" target="_blank" class="atf__hand-container hand-container move">
-            <img src="/content/images/hand.png" class="atf__hand hand wave" alt="*waves*" title="*waves*">
-          </a>
+          <span class="atf__hand-container hand-container move">
+            <img src="/images/hand.png" class="atf__hand hand wave" alt="*waves*" title="*waves*">
+          </span>
           
           <br>
           I’m Fabio, developer, student and ski lover.
@@ -70,11 +68,15 @@
   <div class="atf__image">
     <div class="reveal">
       <div class="reveal__content">
-        <img src="/content/images/profile.jpg" alt="Profile picture" title="">
+        <img src="/images/profile.jpg" alt="Profile picture" title="">
       </div>
     </div>
   </div>
 </section>
+
+
+
+
 
 <section class="section experiences-section js-experiences-section">
   <header class="h1 experiences__h1" data-aos="fade-up" data-aos-delay="50">
@@ -334,12 +336,12 @@
 <section class="section visit" data-aos="fade-up">
   <div class="visit__text">
     <header class="h1 visit__h1">Want to know more about me?</header>
-    <a href="/about" class="visit__link link--decorate link--arrow">
+    <a href="/about/index.html" class="visit__link link--decorate link--arrow">
       Visit my about page
     </a>
   </div>
   <div>
-    <img src="/content/images/guitar.jpg" alt="Custom guitar." title="">
+    <img src="/images/guitar.jpg" alt="Custom guitar." title="">z
   </div>
 </section>  
 	</main>
@@ -351,7 +353,7 @@
     </a>
   </div>
   <div class="footer__bar">
-    <a href="/" class="footer__logo"><img src="/content/images/logo.svg" alt="Fabio."></a>
+    <a href="/" class="footer__logo"><img src="/images/logo.svg" alt="Fabio."></a>
     <div class="footer__message">Have a wonderful day! :)</div>
     <div class="footer__links">
       <a target="_blank" href="https://github.com/fabiosangregorio">github</a>
@@ -361,15 +363,7 @@
   </div>
 </footer> 
 
-	
-<!-- grunt_scripts -->
-<script src="/scripts/flickity.pkgd.min.js"></script>
-<script src="/scripts/flickity-fade.js"></script>
-<script src="/scripts/aos.js"></script>
-<script src="/scripts/util.js"></script>
-<script src="/scripts/app.js"></script>
-<!-- end_grunt_scripts -->
-
+	<script src="/js/bundle.min.js" type="text/javascript"></script>
 </body>
 
 </html>
