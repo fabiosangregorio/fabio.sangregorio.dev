@@ -26,13 +26,13 @@
 
 	<header class="page-header">
   <a href="/" class="logo">
-    <img src="/images/logo.svg" alt="Fabio.">
+    <img data-dark-theme-src="/images/logo--dark.svg" src="/images/logo.svg" alt="Fabio.">
   </a>
   <div class="page-header__links">
     <a href="/about/">about</a>
     <a href="mailto:fabio@sangregorio.dev" target="_blank">contact</a>
   </div>
-</header> 
+</header>  
 	<main class="page-main">
 		
 
@@ -78,11 +78,11 @@
 <section class="section experiences-section js-experiences-section">
   <header class="h1 experiences__h1" data-aos="fade-up" data-aos-delay="50">
     <div>I worked with amazing people.</div>
-    <div class="experiences__mobile-opener">(tap to <span class="js-experiences-toggle">show</span> details)</div>
+    <div class="muted experiences__mobile-opener">(tap to <span class="js-experiences-toggle">show</span> details)</div>
   </header>
   <header class="h1 experiences__h1" data-aos="fade-up" data-aos-delay="50">
     <div>I'm also currently studying.</div>
-    <div class="experiences__mobile-opener">(tap to <span class="js-experiences-toggle">show</span> details)</div>
+    <div class="muted experiences__mobile-opener">(tap to <span class="js-experiences-toggle">show</span> details)</div>
   </header>
   
     <article class="experience" data-aos="fade-up">
@@ -91,7 +91,7 @@
           <a href="https://www.yourbiz.it" target="_blank" class="experience__title">
             Yourbiz
           </a>
-          <div class="experience__role">Frontend web developer</div>
+          <div class="muted experience__role">Frontend web developer</div>
         </div>
         <div class="experience__dates js-experience-animate">
           <div class="experience__end-date">Current</div>
@@ -109,7 +109,7 @@
           <a href="https://www.unibg.it/" target="_blank" class="experience__title">
             Bergamo University
           </a>
-          <div class="experience__role">Computer engineering bachelor’s degree </div>
+          <div class="muted experience__role">Computer engineering bachelor’s degree </div>
         </div>
         <div class="experience__dates js-experience-animate">
           <div class="experience__end-date">Current</div>
@@ -127,7 +127,7 @@
           <a href="https://www.sorint.it" target="_blank" class="experience__title">
             Sorint.LAB
           </a>
-          <div class="experience__role">R&amp;D dpt. school internship</div>
+          <div class="muted experience__role">R&amp;D dpt. school internship</div>
         </div>
         <div class="experience__dates js-experience-animate">
           <div class="experience__end-date">June 2015</div>
@@ -145,7 +145,7 @@
           <a href="https://itisdalmine.edu.it/" target="_blank" class="experience__title">
             IIS G. Marconi
           </a>
-          <div class="experience__role">IT high school diploma</div>
+          <div class="muted experience__role">IT high school diploma</div>
         </div>
         <div class="experience__dates js-experience-animate">
           <div class="experience__end-date">Sept. 2011</div>
@@ -162,7 +162,7 @@
 <section class="section">
   <header class="skills__h1 h1" data-aos="fade-up" data-aos-delay="50">They allowed me to learn some powerful skills.</header>
   <div class="skills" data-aos="fade-up">
-    <div class="skills__legend">
+    <div class="muted skills__legend">
       <div class="skills__block">
         Languages
         
@@ -350,7 +350,7 @@
     </a>
   </div>
   <div class="footer__bar">
-    <a href="/" class="footer__logo"><img src="/images/logo.svg" alt="Fabio."></a>
+    <a href="/" class="footer__logo"><img data-dark-theme-src="/images/logo--dark.svg" src="/images/logo.svg" alt="Fabio."></a>
     <div class="footer__message">Have a wonderful day! :)</div>
     <div class="footer__links">
       <a target="_blank" href="https://github.com/fabiosangregorio">github</a>
@@ -360,6 +360,9 @@
   </div>
 </footer> 
 
+  <div id="toggle-theme">
+		<img data-dark-theme-src="/images/sun--dark.svg" src="/images/sun.svg" alt="Toggle dark mode">
+	</div>
 	<script src="/js/bundle.min.js" type="text/javascript"></script>
 </body>
 
