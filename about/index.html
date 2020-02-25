@@ -26,13 +26,13 @@
 
 	<header class="page-header">
   <a href="/" class="logo">
-    <img src="/images/logo.svg" alt="Fabio.">
+    <img data-dark-theme-src="/images/logo--dark.svg" src="/images/logo.svg" alt="Fabio.">
   </a>
   <div class="page-header__links">
     <a href="/about/">about</a>
     <a href="mailto:fabio@sangregorio.dev" target="_blank">contact</a>
   </div>
-</header> 
+</header>  
 	<main class="page-main">
 		
 
@@ -43,7 +43,7 @@
       <div class="page-title atf__h1">
         Made of coding, coffee, ski<span class="atf__number number--1">(1)</span> and tv shows.<span class="atf__number number--2">(2)</span>
       </div>
-      <div class="atf__notes">
+      <div class="muted atf__notes">
         (1) Resulted in 1 broken finger and 1 fractured & dislocated shoulder *so far*<br>
         (2) Seriously, more than 6,900 episodes registered on 
         <a href="https://www.tvtime.com/it/user/7624959/profile" class="link--decorate link--decorate-visible">TVtime</a>
@@ -338,7 +338,7 @@
     </a>
   </div>
   <div class="footer__bar">
-    <a href="/" class="footer__logo"><img src="/images/logo.svg" alt="Fabio."></a>
+    <a href="/" class="footer__logo"><img data-dark-theme-src="/images/logo--dark.svg" src="/images/logo.svg" alt="Fabio."></a>
     <div class="footer__message">Have a wonderful day! :)</div>
     <div class="footer__links">
       <a target="_blank" href="https://github.com/fabiosangregorio">github</a>
@@ -348,6 +348,9 @@
   </div>
 </footer> 
 
+  <div id="toggle-theme">
+		<img data-dark-theme-src="/images/sun--dark.svg" src="/images/sun.svg" alt="Toggle dark mode">
+	</div>
 	<script src="/js/bundle.min.js" type="text/javascript"></script>
 </body>
 
