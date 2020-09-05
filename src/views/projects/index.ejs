@@ -1,0 +1,19 @@
+<% bodyclasses = 'projects' %>
+<%- layout('../shared/_layout') %>
+
+<div class="section atf">
+  <a href="/" class="atf__link link--arrow-back link--decorate">Back to homepage</a>
+  <div>
+    <header class="atf__header">
+      <div class="page-title atf__h1">
+       Here are some of the latest projects I worked on.
+      </div>
+    </header>
+  </div>
+</div>
+
+<section class="section latest">
+  <%- partial('../shared/_project', { project: projects[0] }) %>
+  <%- partial('../shared/_project', { project: projects[1] }) %>
+  <%- partial('../shared/_project', { project: projects[2] }) %>
+</section>  

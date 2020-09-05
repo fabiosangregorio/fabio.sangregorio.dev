@@ -1,0 +1,10 @@
+=aspect-ratio($width-ratio: 1, $height-ratio: 1)
+  position: relative
+  width: 100%
+  padding-top: #{$height-ratio / $width-ratio * 100%}
+  > *
+    position:  absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0

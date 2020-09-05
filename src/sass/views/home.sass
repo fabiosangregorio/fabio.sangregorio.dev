@@ -1,0 +1,276 @@
+.home
+  .atf
+    @extend %flex-ae-jb
+    min-height: 43rem
+
+  .atf__text
+    max-width: 46.875rem
+    padding-right: 3.125rem
+
+  .atf__link
+    display: inline-block
+    margin-top: 3.4375rem
+
+  .atf__hand
+    margin-left: 0.3125rem
+    display: inline-block
+    will-change: transform
+    cursor: grab
+
+  .atf__image
+    .reveal__content, .reveal__content > *
+      transition-delay: 1.2s
+
+  .atf__hand-container
+    position: relative
+    top: 0.3125rem
+    will-change: transform
+
+  .latest
+    @extend %flex-ae-js
+
+  .latest__link
+    margin: 0 0 5.625rem 8.4375rem
+    font-weight: 500
+    font-size: 1.375rem
+
+  .experiences-section
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 5.3125rem 0
+
+  .experiences__h1
+    max-width: 32.8125rem
+    margin-bottom: 3.925rem
+
+  .experience
+    max-width: 36.5625rem
+
+  .experience__header
+    @extend %flex-as-jb
+
+  .experience__title
+    font-size: 2rem
+    font-weight: 600
+    line-height: 1
+
+  .experience__role
+    font-size: 1.375rem
+    line-height: 1.9
+
+  .experience__dates
+    line-height: 1
+    text-align: right
+
+  .experience__end-date
+    font-size: 1.125rem
+    font-weight: 600
+
+  .experience__start-date
+    font-size: 0.875rem
+
+  .experience__description
+    font-size: 1.125rem
+    margin-top: 1.1375rem
+
+  .js-experiences-section
+    cursor: url('/images/plus.svg') 25 25, auto
+    &.js-experiences-open
+      cursor: url('/images/times.svg') 22 22, auto
+
+  .js-experience-animate
+    opacity: 0
+    visibility: hidden
+    height: 0
+    transition: all .3s ease-in-out
+  
+  .js-experiences-open .js-experience-animate
+    opacity: 1
+    visibility: visible
+
+  .skills__h1
+    max-width: 43.75rem
+    margin-bottom: 9.6875rem
+
+  .skills
+    @extend %flex-as
+
+  .skills__legend, .skills__column
+    flex: 1
+
+  .skills__legend
+    margin-top: 4.5625rem
+
+  .skills__column
+    margin-right: 1.875rem
+
+  .skills__slider-mobile
+    @extend %flex-as
+    flex: 3
+
+  .skills__block
+    margin-bottom: 1.9375rem
+
+  .visit
+    @extend %flex-ac-jb
+
+  .visit__text
+    max-width: 40.625rem
+    padding-right: 3.125rem
+
+  .visit__h1
+    margin-bottom: 4.1875rem
+
+  .visit__link
+    font-size: 1.375rem
+    font-weight: 500
+
+  .slider__counter
+    display: none
+
+  .experiences__mobile-opener
+    display: none
+
+.dark-theme.home 
+  .js-experiences-section
+    cursor: url('/images/plus--dark.svg') 25 25, auto
+    &.js-experiences-open
+      cursor: url('/images/times--dark.svg') 22 22, auto
+
+@media screen and (max-width: 1400px)
+  .home
+    .experiences-section
+      grid-gap: 5.3125rem 3.75rem
+    .slider__container
+      max-width: 60vw
+    .latest__link
+      white-space: nowrap
+      
+
+@media screen and (max-width: 991px)
+  .home
+    .atf
+      margin-top: 15vh
+    .atf__hand
+      margin-left: 0
+      width: 2.1875rem
+    .atf__image
+      display: none
+    .atf__text
+      max-width: none
+    .atf__link
+      margin-top: 2.5rem
+    .page-title
+      margin-top: 1.875rem
+    .page-subtitle
+      font-size: 1rem
+      line-height: 2
+    .latest, .visit
+      display: block
+    .latest
+      text-align: right
+    .project
+      text-align: left
+    .project__label
+      font-size: 0.875rem
+      font-weight: 400    
+    .latest__link, .visit__link
+      margin: 2.25rem 0 0 0
+      font-size: 0.9375rem
+      &:after
+        width: 0.97em
+        vertical-align: bottom
+        margin-left: 0.9375rem
+    .experiences-section
+      display: flex
+      align-items: flex-start
+      justify-content: flex-start
+      flex-flow: column
+      grid-gap: 2.75rem 3.75rem
+    .experiences__mobile-opener
+      font-size: 12px
+      font-weight: 400
+      display: block
+      margin-top: 15px
+    .experience, .experiences__h1
+      &:nth-child(odd)
+        order: 1
+      &:nth-child(even)
+        order: 2
+    .experiences__h1
+      margin-bottom: 2rem
+    .experiences__h1:not(:first-child)
+      margin-top: 5rem
+    .experience:not(:last-child)
+      margin-bottom: 0
+    .experience__title
+      font-size: 1.5rem
+    .experience__role
+      font-size: 1rem
+      font-weight: 500
+      color: #000
+      line-height: 1.5
+      margin-top: 0.625rem
+    .experience__description
+      font-size: 0.875rem
+      line-height: 2
+    .experience__dates
+      color: #777
+      white-space: nowrap
+      text-transform: uppercase
+      margin-bottom: 0.3125rem
+      order: 1
+    .experience__position
+      order: 2
+    .experience__start-date
+      display: inline-block
+      margin-right: 0.3125rem
+      font-size: 0.75rem
+    .experience__end-date
+      display: inline-block
+      font-size: 0.75rem
+      font-weight: 600
+      order: 1
+    .experience__header
+      flex-flow: column
+    .visit__link
+      position: absolute
+      bottom: 0.625rem
+      margin: 0
+      right: 0
+    .visit
+      position: relative
+      padding-bottom: 2.8125rem
+    .skills__slider-mobile
+      display: block
+    .skills__column
+      margin: 0
+      width: 100%
+    .skills__h1
+      margin-bottom: 3.75rem
+    .skill
+      display: inline-block
+      font-size: 0.9375rem
+      &:not(:last-child):after
+        content: ','
+    .slider__container
+      max-width: none
+    .slider__counter
+      text-align: right
+      display: block
+    .skills__legend
+      display: none
+    .skills__block
+      margin-bottom: 0.9375rem
+      &:before
+        content: attr(data-type)
+        display: block
+        font-size: 0.8125rem
+        text-transform: uppercase
+        font-weight: 600
+        line-height: 1
+
+@media screen and (max-width: 767px)
+  .home
+    .atf
+      min-height: 0

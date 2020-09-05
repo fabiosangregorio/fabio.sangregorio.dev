@@ -1,0 +1,23 @@
+body.dark-theme 
+  color: $dark-theme--color
+  background: $dark-theme--background  
+  a
+    &.link--arrow, &.link--arrow-back
+      &:after
+        background-image: url('/images/arrow--dark.svg')
+
+  .link--decorate:before
+    background-color: $dark-theme--accent-color 
+
+  .muted
+    color: $dark-theme--muted-color
+
+  #toggle-theme
+    background-color: #333
+    box-shadow: 2px 4px 5px 1px #000
+  
+
+@media (max-width: 767px)
+  body.dark-theme
+    #toggle-theme
+      box-shadow: 1px 2px 4px 1px #000
