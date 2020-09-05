@@ -58,16 +58,16 @@ module.exports = {
     {
       title:         'Bergamo University',
       link:          'https://www.unibg.it/',
-      role:          'Computer engineering bachelor’s degree ',
-      start:         'Sept. 2016',
+      role:          'Computer engineering Master\'s degree',
+      start:         'Sept. 2019',
       end:           'Current',
-      description:   "I'm currently attending the first year of my Master's degree in Computer Engineering, where I completed the following core courses: Information Technology 2, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems."
+      description:   "I'm currently attending the first year of my Master's degree in Computer Engineering, where I completed the following core courses: Information Technology 3, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems."
     }, {
       title:         'IIS G. Marconi',
       link:          'https://itisdalmine.edu.it/',
       role:          'IT high school diploma',
-      start:         'June 2016',
-      end:           'Sept. 2011',
+      start:         'Sept. 2011',
+      end:           'June 2016',
       description:   "Core courses: C#, MVC, web API, Database, Client-Server architecture, HTML/CSS, Javascript, jQuery.<br />Activities: CCNA1 course, \"Impresa in Azione\" project.<br />Thesis: assigning internships to students based on skills levels."
     }
   ],
