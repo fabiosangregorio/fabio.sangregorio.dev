@@ -1,0 +1,22 @@
+<% bodyclasses = 'about' %>
+<%- layout('../shared/_layout') %>
+
+<%- partial('_abovethefold') %>
+
+<%- partial('_me', { 
+  me: coding, 
+  title: 'Coding.', 
+  description: "I occasionally contribute to open source projects on Github, but mainly I spend my time searching for answers on stackoverflow. I also have some personal projects that I never have time to pursue, here are some of them." 
+}) %>
+
+<%- partial('_me', { 
+  me: photography, 
+  title: 'A new found love.',
+  description: "I recently inherited my father’s DSLR and I have been treasuring it ever since. I’m certainly not the best photographer out there, but I love discovering all the facets this new world has to offer."
+}) %>
+
+<%- partial('_me', { 
+  me: drawing, 
+  title: 'Story time.',
+  description: "When I was a child, I saw a playworker drawing on a small piece of paper: a beautiful forest drawn with a black ballpoint. I was astonished, so I asked if I could have it. When I got home I threw away hundreds sheets of paper trying to reproduce it, adding my own flavor to it. That’s how I started drawing. I now rarely do it anymore, but I cherish that small piece of paper to this day."
+}) %>

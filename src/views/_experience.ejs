@@ -1,0 +1,38 @@
+<%
+  const maxLength = Math.max(jobs.length, education.length);
+  const experiences = []
+  for (let i = 0; i < maxLength; i++) {
+    if (i < jobs.length) experiences.push(jobs[i]);
+    if (i < education.length) experiences.push(education[i]);
+  }
+%>
+
+<section class="section experiences-section js-experiences-section">
+  <header class="h1 experiences__h1" data-aos="fade-up" data-aos-delay="50">
+    <div><h2>I worked with amazing people.</h2></div>
+    <div class="muted experiences__mobile-opener">(tap to <span class="js-experiences-toggle">show</span> details)</div>
+  </header>
+  <header class="h1 experiences__h1" data-aos="fade-up" data-aos-delay="50">
+    <div><h2>I'm also currently studying.</h2></div>
+    <div class="muted experiences__mobile-opener">(tap to <span class="js-experiences-toggle">show</span> details)</div>
+  </header>
+  <% for (experience of experiences) { %>
+    <article class="experience" data-aos="fade-up">
+      <header class="experience__header">
+        <div class="experience__position">
+          <a title="<%= experience.title %>" href="<%= experience.link %>" target="_blank" class="experience__title">
+            <%= experience.title %>
+          </a>
+          <div class="muted experience__role"><%= experience.role %></div>
+        </div>
+        <div class="experience__dates js-experience-animate">
+          <div class="experience__end-date"><%= experience.end %></div>
+          <div class="experience__start-date"><%= experience.start %></div>
+        </div>
+      </header>
+      <div class="experience__description js-experience-animate">
+        <%- experience.description %>
+      </div> 
+    </article>
+  <% } %>
+</section>

@@ -1,0 +1,29 @@
+<% bodyclasses = 'home' %>
+<%- layout('shared/_layout') %>
+
+<%- partial('_abovethefold') %>
+
+<% if (false) { %>
+ <section class="section latest">
+  <%- partial('shared/_project', { project: projects[0], latestProjects: true }) %>
+  <a href="/projects/index.html" class="latest__link link--decorate link--arrow">
+    See more work
+  </a>
+</section>
+<% } %>
+
+<%- partial('_experience') %>
+
+<%- partial('_skills') %>
+
+<section class="section visit" data-aos="fade-up">
+  <div class="visit__text">
+    <header class="h1 visit__h1">Want to know more about me?</header>
+    <a title="About" href="/about/" class="visit__link link--decorate link--arrow">
+      Visit my about page
+    </a>
+  </div>
+  <div>
+    <img src="/images/guitar.jpg" alt="Custom guitar." title="">
+  </div>
+</section>  

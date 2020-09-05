@@ -1,0 +1,340 @@
+html, body
+  margin: 0
+
+*
+  box-sizing: border-box
+
+img
+  max-width: 100%
+  display: inline-block
+
+p
+  margin: 0
+   
+body
+  font-size: $body--fs
+  font-weight: $body--fw
+  line-height: $body--lh
+  font-family: $body--ff
+  padding: $body--padding
+
+h1, h2, h3, h4, h5, h6
+  font-size: inherit
+  font-weight: inherit
+  margin: 0
+  line-height: inherit
+
+.page-title
+  font-size: $page-title--fs
+  font-weight: $page-title--fw
+  line-height: $page-title--lh
+  margin: $page-title--margin
+
+.page-subtitle
+  font-size: $page-subtitle--fs
+  font-weight: $page-subtitle--fw
+  line-height: $page-subtitle--lh
+
+.h1
+  font-size: $h1--fs
+  font-weight: $h1--fw
+  line-height: $h1--lh
+  margin: $h1--margin
+
+.h1-label
+  font-size: $h1-label--fs
+  font-weight: $h1-label--fw
+  line-height: $h1-label--margin
+
+.h2
+  font-size: $h2--fs
+  font-weight: $h2--fw
+  line-height: $h2--lh
+  margin: $h2--margin
+
+a
+  display: inline-block
+  text-decoration: none
+  color: inherit
+  &.link--decorate
+    $width: calc(2em)
+    $hoverWidth: 90%
+    position: relative
+    line-height: 1.2
+    &:before
+      content: ''
+      display: inline-block
+      height: calc(0.5em + 2px)
+      width: $width
+      top: calc(0.75em - 2px)
+      left: calc(-0.5em)
+      position: absolute
+      background-color: #FFF0A3 
+      z-index: -1
+      transition: $theme--transition, 0.5s width cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    &:hover:before
+      width: $hoverWidth
+    &.link--decorate-visible
+      &:before
+        width: $hoverWidth
+      &:hover:before
+        width: $width
+    &.link--arrow, &.link--arrow-back
+      &:hover:before
+        width: calc(95% - 3.25rem)
+
+  &.link--arrow, &.link--arrow-back
+    &:after
+      content: ''
+      display: inline-block
+      width: 1.375rem
+      height: 0.875rem
+      background-image: url('/images/arrow.svg')
+      background-repeat: no-repeat
+      background-size: contain
+  &.link--arrow
+    &:after
+      margin-left: 1.875rem
+  &.link--arrow-back
+    display: inline-flex
+    align-items: center
+    &:after
+      margin-right: 1.875rem
+      transform: rotate(180deg)
+      order: -1
+    &.link--decorate
+      &:before
+        margin-left: 3.25rem
+
+.page-main, .page-header, .page-footer
+  max-width: $page--max-width
+  width: $page--width
+  margin-left: auto
+  margin-right: auto
+
+.section
+  margin: $section--margin
+
+.logo
+  width: 5.375rem
+
+.page-header
+  @extend %flex-as-jb
+  font-weight: 500
+  margin-bottom: 5.3125rem
+
+.page-header__links
+  a
+    margin-left: 2.8125rem
+
+.project
+  max-width: 65.5rem
+  width: 100%
+
+.project__slider
+  width: 100%
+
+.project__label
+  font-size: 1.375rem
+  margin-bottom: 0.3125rem
+  font-weight: 500
+
+.slider__container
+  display: block
+  width: 100%
+  border: 1px solid #eee
+
+.footer__cta
+  margin-bottom: 14.375rem
+
+.footer__title
+  max-width: 45rem
+  margin-bottom: 4.375rem
+
+.footer__cta-link
+  font-size: 1.625rem
+
+.footer__bar
+  @extend %flex-ae-jb
+  > *
+    flex: 1
+
+.footer__message
+  text-align: center
+
+.footer__links
+  text-align: right
+  a:not(:last-child)
+    margin-right: 1.975rem
+
+.slider__counter
+  font-weight: 600
+  font-size: 1.125rem
+  line-height: 1
+
+.total-slides
+  font-weight: 500
+  font-size: 0.75rem
+  vertical-align: top
+  line-height: 1
+
+html:not(.no-js) [data-aos=fade-up]
+  transform: translate3d(0, 50px, 0)
+
+.reveal
+  height: 0
+  &.loaded .reveal__content
+    height: 100%
+    > *
+      transform: scale(1)
+
+.reveal__content
+  overflow: hidden
+  height: 0
+  transition: all .9s 
+
+.reveal__content > *
+  transform: scale(1.5)
+  transition: all .9s
+
+.reveal-text
+  overflow: hidden
+  &:nth-child(2) .reveal__content
+    animation-delay: 0.6s 
+  &:nth-child(3) .reveal__content
+    animation-delay: 1.2s
+
+.reveal-text__content
+  transform: translateY(100%)
+  animation: reveal 1s cubic-bezier(0.76, 0.04, 0.4, 1) forwards
+
+@keyframes reveal 
+  from 
+    transform: translateY(100%)
+  to 
+    transform: translateY(0)
+
+#toggle-theme
+  cursor: pointer
+  position: fixed
+  right: 1.875rem
+  bottom: 1.875rem
+  width: 3.75rem
+  height: 3.75rem
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 62.5rem
+  &.disabled
+    pointer-events: none
+  img
+    width: 1.875rem
+
+
+@media screen and (max-width: 1365px)
+  html
+    font-size: 0.875rem
+
+@media screen and (max-width: 1199px)
+  .footer__bar > *
+    flex: auto
+
+@media screen and (max-width: 991px)
+  body
+    padding: 3.125rem 0
+
+  .section
+    margin: 0 0 11.25rem 0
+
+  .page-title
+    font-size: 3.375rem
+
+  .h1
+    font-size: 2.625rem
+
+  .footer__bar
+    flex-flow: column
+    align-items: flex-start
+    justify-content: flex-start
+  
+  .footer__links 
+    text-align: left
+    margin-bottom: 2.8125rem
+    a
+      display: block
+      order: 1
+      &:not(:last-child)
+        margin-left: 0
+        margin-right: 0
+
+  .footer__message
+    order: 2
+    align-self: center
+
+  .footer__logo
+    display: none
+
+  .footer__cta
+    margin-bottom: 12.5rem
+
+
+@media screen and (max-width: 767px)
+  body
+    padding: 1.875rem 0
+
+  .logo
+    width: 3.875rem
+
+  .page-main, .page-header, .page-footer
+    max-width: none
+    width: 100%
+    padding: 0 1.875rem
+  
+  .page-header__links a
+    font-size: 0.9375rem
+    margin-left: 1.875rem
+
+  .page-title
+    font-size: 2.375rem
+  
+  .section
+    margin: 0 0 9.375rem 0
+
+  .h1
+    font-size: 2rem
+    margin-bottom: 1.875rem
+    
+  .h2
+    font-size: 1.375rem
+    margin-bottom: 1.25rem
+
+  .page-title.footer__title
+    font-size: 2rem
+
+  .page__footer
+    margin-top: 1.875rem 
+
+  .footer__title
+    margin-bottom: 2.8125rem
+
+  .footer__cta-link
+    font-size: 0.9375rem
+  
+  .footer__links 
+    font-size: 0.875rem
+
+  .footer__message
+    font-size: 0.6875rem
+
+  .footer__cta
+    margin-bottom: 5.625rem
+
+  #toggle-theme
+    width: 3.125rem
+    height: 3.125rem
+    right: 1.25rem
+    bottom: 1.25rem
+    img
+      width: 1.5625rem
+      
+  

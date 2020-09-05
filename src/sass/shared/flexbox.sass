@@ -1,0 +1,44 @@
+%flex-as
+  display: flex
+  align-items: flex-start
+%flex-ac
+  display: flex
+  align-items: center
+%flex-ae
+  display: flex
+  align-items: flex-end
+
+%flex-js
+  justify-content: flex-start
+%flex-jc
+  justify-content: center
+%flex-je
+  justify-content: flex-end
+%flex-jb
+  justify-content: space-between
+%flex-ja
+  justify-content: space-around
+
+%flex-ac-jc
+  @extend %flex-ac
+  @extend %flex-jc
+
+%flex-ac-jb
+  @extend %flex-ac
+  @extend %flex-jb
+
+%flex-ae-jb
+  @extend %flex-ae
+  @extend %flex-jb
+
+%flex-ae-js
+  @extend %flex-ae
+  @extend %flex-js
+
+%flex-as-jb
+  @extend %flex-as
+  @extend %flex-jb
+
+%flex-as-js
+  @extend %flex-as
+  @extend %flex-js

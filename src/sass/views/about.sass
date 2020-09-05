@@ -1,0 +1,83 @@
+.about
+  .atf
+    @extend %flex-ae-jb
+    margin-top: 31.1vh
+
+  .atf__header
+    margin-bottom: 6.5625rem
+
+  .atf__h1
+    margin-bottom: 3.125rem
+    max-width: 47.1875rem
+
+  .atf__notes
+    font-size: 1rem
+
+  .atf__text
+    font-size: 1.25rem
+    max-width: 63.125rem
+
+  .atf__number
+    font-size: 1.375rem
+    vertical-align: top
+
+  .me__header
+    margin-bottom: 6.25rem
+
+  .me__text
+    max-width: 57.1875rem
+
+  .me__items
+    @extend %flex-as-jb
+
+  .me__item
+    flex: 1
+    max-width: calc(33.333% - 50px)
+
+  .me__item-text
+    max-width: 24.375rem
+    font-size: 1rem
+    .me__item-link
+      margin-top: 1.875rem
+      font-weight: 500
+
+  .me__item .slider__counter
+    display: none
+
+  .me__item-link
+    @extend %flex-as-jb
+    margin-top: 0.625rem
+    a
+      font-size: 1rem
+
+@media screen and (max-width: 767px)
+  .about
+    .atf
+      margin-top: 10rem
+    .atf__h1
+      margin-bottom: 2.525rem
+    .atf__number
+      font-size: 13px
+    .atf__notes
+      font-size: 0.8rem
+      line-height: 1.3rem
+    .atf__header
+      margin-bottom: 3.75rem
+    .atf__text
+      font-size: 0.9375rem
+    .me__text
+      font-size: 0.9375rem
+    .me__header
+      margin-bottom: 4.0625rem
+    .me__items
+      display: block
+    .me__item
+      max-width: none
+      width: 100%
+      .slider__counter
+        display: block
+    .me__item-text
+      font-size: 0.875rem
+    .me__item-link 
+      a
+        font-size: 0.8125rem
