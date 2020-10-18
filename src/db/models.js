@@ -113,9 +113,9 @@ module.exports = {
   photography: [
     {
       image: {
-        path: '/images/church.jpg',
-        alt: 'Basilica of Santa Maria Maggiore, Bergamo',
-        description: 'Basilica of Santa Maria Maggiore, Bergamo'
+        path: '/images/venice.jpg',
+        alt: 'A canal in Venice, Italy',
+        description: 'A canal in Venice, Italy'
       },
       link: {
         url: 'https://instagram.com/fabio.sang',
