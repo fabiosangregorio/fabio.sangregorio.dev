@@ -1,50 +1,50 @@
 module.exports = {
   projects: [
-    {
-      id:            'noku',
-      title:         'Noku TokenRaise',
-      description:   'Noku TokenRaise is a web app that provides you with the best service on the market to customize your crowdsale on Ethereum Blockchain, without writing a line of code and in a matter of minutes.',
-      category:      'React web app',
-      year:          '2018',
-      link: {
-        text:        'tokenraise.noku.io',
-        url:         'https://www.noku.io/tokenraise/'
-      },
-      desktopImages: '4',
-      mobileImages:  '3',
-      role:          'to do'
-    }, {
-      id:            'netmedicare',
-      title:         'Net Medicare',
-      description:   'to do',
-      category:      'HTML/jQuery web app',
-      year:          '2017',
-      link: {
-        text:        'netmedi.care',
-        url:         'https://www.netmedi.care/'
-      },
-      desktopImages: '4',
-      mobileImages:  '3',
-      role:          'to do'
-    }, {
-      id:            'parlux',
-      title:         'MyParlux',
-      description:   'to do',
-      category:      'HTML/jQuery website',
-      year:          '2016',
-      role:          'to do',
-      desktopImages: '4',
-      mobileImages:  '3',
-    }
+    // {
+    //   id:            'noku',
+    //   title:         'Noku TokenRaise',
+    //   description:   'Noku TokenRaise is a web app that provides you with the best service on the market to customize your crowdsale on Ethereum Blockchain, without writing a line of code and in a matter of minutes.',
+    //   category:      'React web app',
+    //   year:          '2018',
+    //   link: {
+    //     text:        'tokenraise.noku.io',
+    //     url:         'https://www.noku.io/tokenraise/'
+    //   },
+    //   desktopImages: '4',
+    //   mobileImages:  '3',
+    //   role:          'to do'
+    // }, {
+    //   id:            'netmedicare',
+    //   title:         'Net Medicare',
+    //   description:   'to do',
+    //   category:      'HTML/jQuery web app',
+    //   year:          '2017',
+    //   link: {
+    //     text:        'netmedi.care',
+    //     url:         'https://www.netmedi.care/'
+    //   },
+    //   desktopImages: '4',
+    //   mobileImages:  '3',
+    //   role:          'to do'
+    // }, {
+    //   id:            'parlux',
+    //   title:         'MyParlux',
+    //   description:   'to do',
+    //   category:      'HTML/jQuery website',
+    //   year:          '2016',
+    //   role:          'to do',
+    //   desktopImages: '4',
+    //   mobileImages:  '3',
+    // }
   ],
   jobs: [
     {
       title:         'Yourbiz',
       link:          'https://www.yourbiz.it',
       role:          'Frontend web developer',
-      start:         'July 2016',
-      end:           'Current',
-      description:   "I've been working at Yourbiz as a part-time developer for 3 years, where I've been building the frontend of the company websites, with special attention to responsiveness, SEO and performance optimization. I've also had experience in the realization of pure HTML/JS web apps, as well as apps based on frameworks such as Angular, AngularJS and React."
+      start:         'Sept. 2019',
+      end:           'Oct 2020',
+      description:   "I worked at Yourbiz as a part-time developer for 4 years, where I've built the frontend of the company websites, with special attention to responsiveness, SEO and performance optimization. I also had experience in the realization of pure HTML/JS web apps, as well as apps based on frameworks such as Angular, AngularJS and React."
     }, {
       title:         'Sorint.LAB',
       link:          'https://www.sorint.it',
@@ -58,17 +58,17 @@ module.exports = {
     {
       title:         'Bergamo University',
       link:          'https://www.unibg.it/',
-      role:          'Computer engineering bachelor’s degree ',
-      start:         'Sept. 2016',
+      role:          'Computer engineering Master’s degree',
+      start:         'Sept. 2019',
       end:           'Current',
-      description:   "I'm currently attending the first year of my Master's degree in Computer Engineering, where I completed the following core courses: Information Technology 2, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems."
-    }, {
-      title:         'IIS G. Marconi',
-      link:          'https://itisdalmine.edu.it/',
-      role:          'IT high school diploma',
-      start:         'June 2016',
-      end:           'Sept. 2011',
-      description:   "Core courses: C#, MVC, web API, Database, Client-Server architecture, HTML/CSS, Javascript, jQuery.<br />Activities: CCNA1 course, \"Impresa in Azione\" project.<br />Thesis: assigning internships to students based on skills levels."
+      description:   "I'm currently attending the last year of my Master's degree in Computer Engineering, where I completed the following core courses: Software design, Algorithms, Artificial Intelligence, Model Identification and Data Analysis, Information and Transmission Theory, Optimization Models and Algorithms, Business Administration."
+    },  {
+      title:         'Bergamo University',
+      link:          'https://www.unibg.it/',
+      role:          'Computer engineering Bachelor’s degree',
+      start:         'Sept. 2016',
+      end:           'Sept. 2019',
+      description:   "After high school I achieved my bacherlor's degree in Computer Science Engineering, where I completed the following core courses: Information Technology 2, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems."
     }
   ],
   skills: [
