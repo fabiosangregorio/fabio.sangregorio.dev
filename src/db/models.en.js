@@ -1,42 +1,65 @@
 module.exports = {
-  projects: [
-    {
-      id:            'noku',
-      title:         'Noku TokenRaise',
-      description:   'Noku TokenRaise is a web app that provides you with the best service on the market to customize your crowdsale on Ethereum Blockchain, without writing a line of code and in a matter of minutes.',
-      category:      'React web app',
-      year:          '2018',
-      link: {
-        text:        'tokenraise.noku.io',
-        url:         'https://www.noku.io/tokenraise/'
-      },
-      desktopImages: '4',
-      mobileImages:  '3',
-      role:          'to do'
-    }, {
-      id:            'netmedicare',
-      title:         'Net Medicare',
-      description:   'to do',
-      category:      'HTML/jQuery web app',
-      year:          '2017',
-      link: {
-        text:        'netmedi.care',
-        url:         'https://www.netmedi.care/'
-      },
-      desktopImages: '4',
-      mobileImages:  '3',
-      role:          'to do'
-    }, {
-      id:            'parlux',
-      title:         'MyParlux',
-      description:   'to do',
-      category:      'HTML/jQuery website',
-      year:          '2016',
-      role:          'to do',
-      desktopImages: '4',
-      mobileImages:  '3',
-    }
-  ],
+  header: {
+    about: 'about',
+    contact: 'contact'
+  },
+  footer: {
+    title: 'Let me know if I can help you with anything.',
+    goodbye: 'Have a wonderful day! :)'
+  },
+  email_alt: 'Send me an email :)',
+  home: {
+    title: {
+      line1: 'Hey there!',
+      line2: 'I’m Fabio, developer, student and ski lover.',
+    },
+    subtitle: 'I’m a computer engineering graduate currently working as a frontend web developer in Bergamo, Italy. I can help you with building all-things web - especially web apps - and software.<br>How can I help you?',
+    jobs: 'I worked with amazing people.',
+    education: 'I\'m also currently studying.',
+    skills: 'They allowed me to learn some powerful skills.',
+    about: {
+      title: 'Want to know more about me?',
+      link: 'Visit my about page'
+    },
+  },
+  // projects: [
+  //   {
+  //     id:            'noku',
+  //     title:         'Noku TokenRaise',
+  //     description:   'Noku TokenRaise is a web app that provides you with the best service on the market to customize your crowdsale on Ethereum Blockchain, without writing a line of code and in a matter of minutes.',
+  //     category:      'React web app',
+  //     year:          '2018',
+  //     link: {
+  //       text:        'tokenraise.noku.io',
+  //       url:         'https://www.noku.io/tokenraise/'
+  //     },
+  //     desktopImages: '4',
+  //     mobileImages:  '3',
+  //     role:          'to do'
+  //   }, {
+  //     id:            'netmedicare',
+  //     title:         'Net Medicare',
+  //     description:   'to do',
+  //     category:      'HTML/jQuery web app',
+  //     year:          '2017',
+  //     link: {
+  //       text:        'netmedi.care',
+  //       url:         'https://www.netmedi.care/'
+  //     },
+  //     desktopImages: '4',
+  //     mobileImages:  '3',
+  //     role:          'to do'
+  //   }, {
+  //     id:            'parlux',
+  //     title:         'MyParlux',
+  //     description:   'to do',
+  //     category:      'HTML/jQuery website',
+  //     year:          '2016',
+  //     role:          'to do',
+  //     desktopImages: '4',
+  //     mobileImages:  '3',
+  //   }
+  // ],
   jobs: [
     {
       title:         'Yourbiz',
@@ -163,5 +186,5 @@ module.exports = {
         description: 'Half skin half skull.'
       },
     }
-  ]
+  ],
 }

@@ -1,13 +1,13 @@
 <footer class="page-footer">
   <div class="footer__cta">
-    <div class="page-title footer__title">Let me know if I can help you with anything.</div>
-    <a title="Send me and email :)" href="mailto:fabio@sangregorio.dev" class="footer__cta-link link--decorate link--decorate-visible" target="_blank">
+    <div class="page-title footer__title"><%= footer.title %></div>
+    <a title="<%= email_alt %>" href="mailto:fabio@sangregorio.dev" class="footer__cta-link link--decorate link--decorate-visible" target="_blank">
       fabio@sangregorio.dev
     </a>
   </div>
   <div class="footer__bar">
     <a href="/" class="footer__logo"><img data-dark-theme-src="/images/logo--dark.svg" src="/images/logo.svg" alt="Fabio."></a>
-    <div class="footer__message">Have a wonderful day! :)</div>
+    <div class="footer__message"><%= footer.goodbye %></div>
     <div class="footer__links">
       <a title="Github" target="_blank" href="https://github.com/fabiosangregorio">github</a>
       <a title="Sourcerer" target="_blank" href="https://sourcerer.io/fabiosangregorio">sourcerer</a>
