@@ -1,0 +1,50 @@
+<section class="section">
+  <header class="skillstable__h1 h1" data-aos="fade-up" data-aos-delay="50"><h2>They allowed me to learn some powerful skills.</h2></header>
+  <div class="skillstable" data-aos="fade-up">
+    <div class="muted skillstable__legend">
+      <div class="skillstable__block">
+        Languages
+        <% for(var i = 0; i < Math.max(...skillstable.map(s => s[0].length)); i++) { %>
+          <br />
+        <% } %>
+      </div>
+      <div class="skillstable__block">
+        Technologies
+        <% for(var i = 0; i < Math.max(...skillstable.map(s => s[1].length)); i++) { %>
+          <br />
+        <% } %>
+      </div>
+      <div class="skillstable__block">
+        Other
+        <% for(var i = 0; i < Math.max(...skillstable.map(s => s[2].length)); i++) { %>
+          <br />
+        <% } %>
+      </div>
+    </div>
+    <div class="skillstable__slider-mobile mobile-slider">
+      <% for (var i = 0; i < skillstable.length; i++) { %>
+        <div class="skillstable__column">
+          <div class="h2">
+            <%= i == 0? "Daily drivers." : i == 1? "Comfort zone." : "Worked with." %>
+          </div>
+          <% for (var j = 0; j < skillstable[i].length; j++) { %>
+            <div class="skillstable__block" data-type="<%= j == 0? 'Languages' : j == 1? 'Technologies' : 'Other' %>">
+            <% for (var skill of skillstable[i][j]) { %>
+              <div class="skill"><%= skill %></div>
+            <% } %>
+            </div>
+          <% } %>
+          <div class="slider__counter">
+            -
+            <span class="current-slide">
+              <%= ("0" + (i + 1)).slice(-2) %>
+            </span>
+            <span class="total-slides"> 
+              <%= ("0" + skillstable.length).slice(-2) %>
+            </span>
+          </div>
+        </div>
+      <% } %>
+    </div>
+  </div>
+</section>

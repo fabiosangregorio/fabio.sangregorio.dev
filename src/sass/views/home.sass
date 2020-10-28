@@ -92,24 +92,36 @@
     max-width: 43.75rem
     margin-bottom: 9.6875rem
 
-  .skills
+  .skillstable
     @extend %flex-as
 
-  .skills__legend, .skills__column
+  .skillstable__legend, .skillstable__column
     flex: 1
 
-  .skills__legend
+  .skillstable__legend
     margin-top: 4.5625rem
 
-  .skills__column
+  .skillstable__column
     margin-right: 1.875rem
 
-  .skills__slider-mobile
+  .skillstable__slider-mobile
     @extend %flex-as
     flex: 3
 
-  .skills__block
+  .skillstable__block
     margin-bottom: 1.9375rem
+
+  .skills
+    @extend %flex-as
+    flex-wrap: wrap
+
+  .skills__item
+    width: 50%
+    margin-bottom: 4.5rem
+    padding-right: 15px
+
+  .skills__iteminner
+    max-width: 36.875rem
 
   .visit
     @extend %flex-ac-jb
@@ -241,13 +253,19 @@
     .visit
       position: relative
       padding-bottom: 2.8125rem
-    .skills__slider-mobile
+    .skillstable__slider-mobile
       display: block
-    .skills__column
+    .skillstable__column
       margin: 0
       width: 100%
     .skills__h1
       margin-bottom: 3.75rem
+    .skills
+      display: block
+    .skills__item, .skills__iteminner
+      width: 100%
+      max-width: none
+      padding: 0
     .skill
       display: inline-block
       font-size: 0.9375rem
@@ -258,9 +276,9 @@
     .slider__counter
       text-align: right
       display: block
-    .skills__legend
+    .skillstable__legend
       display: none
-    .skills__block
+    .skillstable__block
       margin-bottom: 0.9375rem
       &:before
         content: attr(data-type)

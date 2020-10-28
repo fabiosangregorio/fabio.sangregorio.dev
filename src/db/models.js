@@ -58,33 +58,59 @@ module.exports = {
     {
       title:         'Bergamo University',
       link:          'https://www.unibg.it/',
-      role:          'Computer engineering Master’s degree',
+      role:          'Computer Engineering Master’s degree',
       start:         'Sept. 2019',
       end:           'Current',
       description:   "I'm currently attending the last year of my Master's degree in Computer Engineering, where I completed the following core courses: Software design, Algorithms, Artificial Intelligence, Model Identification and Data Analysis, Information and Transmission Theory, Optimization Models and Algorithms, Business Administration."
     },  {
       title:         'Bergamo University',
       link:          'https://www.unibg.it/',
-      role:          'Computer engineering Bachelor’s degree',
+      role:          'Computer Engineering Bachelor’s degree',
       start:         'Sept. 2016',
       end:           'Sept. 2019',
       description:   "After high school I achieved my bacherlor's degree in Computer Science Engineering, where I completed the following core courses: Information Technology 2, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems."
     }
   ],
+  // skillstable: [
+  //   [
+  //     ['HTML5 & CSS3', 'Javascript', 'Python', 'Sass'],
+  //     ['jQuery', 'React', 'Git'],
+  //     ['Github']
+  //   ], [
+  //     ['Ruby (on Rails)', 'Typescript', 'MATLAB', 'C#'],
+  //     ['Angular', 'Grunt', 'Node'],
+  //     ['Photoshop']
+  //   ], [
+  //     ['Java', 'C++', 'SQL', 'PHP'],
+  //     ['AngularJS', 'Firebase', 'npm'],
+  //     ['Figma']
+  //   ]
+  // ],
   skills: [
-    [
-      ['HTML5 & CSS3', 'Javascript', 'Python', 'Sass'],
-      ['jQuery', 'React', 'Git'],
-      ['Github']
-    ], [
-      ['Ruby (on Rails)', 'Typescript', 'MATLAB', 'C#'],
-      ['Angular', 'Grunt', 'Node'],
-      ['Photoshop']
-    ], [
-      ['Java', 'C++', 'SQL', 'PHP'],
-      ['AngularJS', 'Firebase', 'npm'],
-      ['Figma']
-    ]
+    {
+      title: 'Frontend Web Development',
+      description: `
+        <p>5 years work experience in the field, building websites, javascript plugins and web apps.</p>
+        <p>Main technologies: HTML5 & CSS3, Sass, Javascript, jQuery, Grunt, Figma, Photoshop, SEO, Responsiveness.</p>
+        <p>Worked with: React, Angular, Typescript.</p>`
+    }, {
+      title: 'Software Development',
+      description: `
+        <p>I have been coding since high school for personal and academic production-ready projects.
+        <p>Main technologies: Python, NodeJS, C#, Java, Open Source.</p>
+        <p>Worked with: Firebase, Scala, MATLAB, C++, Ruby (on Rails), SQL.</p>`
+    }, {
+      title: 'DevOps',
+      description: `
+        <p>2 years experience in CI/CD for testing, linting and deploying work and personal projects.</p>
+        <p>Main technologies: git, Github, Github Actions, Vim, git-crypt.</p>
+        <p>Worked with: Travis CI, Gitlab CI, Docker.</p>`
+    }, {
+      title: 'Soft Skills',
+      description: `
+        <p>I love being organized, and time mangement is a must if working while studying for university.</p>
+        <p>Organization (Notion freak), flexibility, time management, teamwork.</p>`
+    }
   ],
   coding: [
     {
