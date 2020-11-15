@@ -5,11 +5,12 @@ module.exports = {
     description: 'Sono un laureando di ingegneria informatica e sto attualmente lavorando come frontend web developer a Bergamo. Posso aiutarti a costruire qualsiasi cosa web e software.',
   },
   header: {
+    langlink: 'versione inglese', 
     about: 'su di me',
     contact: 'contattami'
   },
   footer: {
-    title: 'Fammi sapere se posso aiutarti in qualche modo.',
+    title: 'Fammi sapere come posso aiutarti.',
     goodbye: 'Abbi una fantastica giornata! :)'
   },
   email_alt: 'Mandami una mail :)',
@@ -20,10 +21,10 @@ module.exports = {
     },
     subtitle: 'Sono un laureando di ingegneria informatica e sto attualmente lavorando come frontend web developer a Bergamo. Posso aiutarti a costruire qualsiasi cosa web e software.<br>Come posso aiutarti?',
     jobs: 'Ho lavorato con persone meravigliose.',
-    education: 'Sto anche attualmente studiando.',
-    skills: 'Mi hanno permesso di apprendere alcune abilità potenti.',
+    education: 'Attualmente sto anche studiando.',
+    skills: 'Mi hanno permesso di apprendere grandi abilità.',
     about: {
-      title: 'Vuoi sapere di più su di me?',
+      title: 'Vuoi conoscere meglio chi sono?',
       link: 'Visita la mia pagina "Su di me"'
     },
   },
