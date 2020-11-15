@@ -3,25 +3,21 @@
     <div class="page-title">
       <div class="reveal-text">
         <div class="reveal-text__content">
-          Hey there!
+          <%= home.title.line1 %>
           <a title="*waves*" href="https://codepen.io/fabiosangregorio/" target="_blank"
             class="atf__hand-container hand-container move">
             <img src="/images/hand.png" class="atf__hand hand wave" alt="*waves*" title="*waves*">
           </a>
-
           <br>
-          <h1>I’m Fabio, developer, student and ski lover.</h1>
+          <h1><%= home.title.line2 %></h1>
         </div>
       </div>
     </div>
     <div class="page-subtitle" data-aos="fade-up" data-aos-duration="700" data-aos-delay="800">
       <p>
-        I’m a computer engineering graduate currently working as a
-        frontend web developer in Bergamo, Italy. I can help you with building
-        all-things web - especially web apps - and software.<br>
-        How can I help you?
+        <%- home.subtitle %>
       </p>
-      <a title="Send me an email :)" href="mailto:fabio@sangregorio.dev"
+      <a title="<%= email_alt %>" href="mailto:fabio@sangregorio.dev"
         class="atf__link link--decorate">fabio@sangregorio.dev</a>
     </div>
   </div>

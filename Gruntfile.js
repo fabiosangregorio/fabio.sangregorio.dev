@@ -1,4 +1,5 @@
-const models = require("./src/db/models.js");
+const enModels = require("./src/models/models.en.js");
+const itModels = require("./src/models/models.it.js");
 const sass = require("node-sass");
 const imagemin = {
   mozjpeg: require('imagemin-mozjpeg'),
@@ -42,24 +43,31 @@ module.exports = function (grunt) {
     cssmin: {
       dist: { 
         files: { 
-          'dist/css/bundle.min.css': [
-            css.map(f => 'src/css' + f),
-            'dist/css/app.css'
-          ] 
+          'dist/css/bundle.min.css': [ css.map(f => 'src/css' + f), 'dist/css/app.css' ] 
         } 
       }
     },
 
     ejs: {
-      dist: {
+      en: {
         files: [{
           expand: true,
           cwd: 'src/views',
           src: ['**/*.ejs', '!**/_*.ejs', '!**/partials/**', '!**/components/**', '!**/projects/**'],
-          dest: 'dist/',
+          dest: 'dist/en',
           ext: '.html'
         }],
-        options: models
+        options: enModels
+      },
+      it: {
+        files: [{
+          expand: true,
+          cwd: 'src/views',
+          src: ['**/*.ejs', '!**/_*.ejs', '!**/partials/**', '!**/components/**', '!**/projects/**'],
+          dest: 'dist/it',
+          ext: '.html'
+        }],
+        options: itModels
       }
     },
 
@@ -155,7 +163,7 @@ module.exports = function (grunt) {
             '!**/*.ejs',
             '!**/js/**',
             '!**/css/**',
-            '!**/db/**'
+            '!**/models/**'
           ],
           dest: 'dist/'
         }],
@@ -242,6 +250,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-sitemap');
   grunt.loadNpmTasks('grunt-cwebp');
 
-  grunt.registerTask('default', ['clean:reset', 'sass', 'babel', 'ejs', 'sync', 'cssmin', 'uglify:dev', 'imagemin', 'cwebp', 'clean:dist',  'browserSync', 'watch']);
-  grunt.registerTask('build', ['clean:reset', 'sass', 'babel', 'ejs', 'sync', 'cssmin', 'uglify:dist', 'imagemin', 'cwebp', 'clean:dist', 'sitemap']);
+  grunt.registerTask('default', ['clean:reset', 'sass', 'babel', 'ejs:en', 'ejs:it', 'sync', 'cssmin', 'uglify:dev', 'imagemin', 'cwebp', 'clean:dist',  'browserSync', 'watch']);
+  grunt.registerTask('build', ['clean:reset', 'sass', 'babel', 'ejs:en', 'ejs:it', 'sync', 'cssmin', 'uglify:dist', 'imagemin', 'cwebp', 'clean:dist', 'sitemap']);
 };

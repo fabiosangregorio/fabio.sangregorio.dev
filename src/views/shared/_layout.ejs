@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= lang %>">
 
 <head>
 	<meta charset="UTF-8">
@@ -15,12 +15,13 @@
 	<meta name="application-name" content="Fabio.">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" data-dark-theme-content="#121212" content="#ffffff">
-	<title>Fabio. <%= typeof htmltitle != 'undefined'? "- " + htmltitle : '- developer, student and ski lover' %></title>
-	<meta property="og:title" content="Fabio. <%= typeof htmltitle != 'undefined'? "- " + htmltitle : '- developer, student and ski lover' %>">
-	<meta property="twitter:title" content="Fabio. <%= typeof htmltitle != 'undefined'? "- " + htmltitle : '- developer, student and ski lover' %>">
-	<meta name="description" content="I’m a computer engineering graduate currently working as a frontend web developer in Bergamo, Italy. I can help you with building all-things web and software.">
-	<meta property="og:description" content="I’m a computer engineering graduate currently working as a frontend web developer in Bergamo, Italy. I can help you with building all-things web and software.">
-	<meta property="twitter:description" content="I’m a computer engineering graduate currently working as a frontend web developer in Bergamo, Italy. I can help you with building all-things web and software.">
+	<% var fulltitle = 'Fabio. - ' + (typeof htmltitle != 'undefined'? htmltitle : meta.title); %> 
+	<title><%= fulltitle %></title>
+	<meta property="og:title" content="<%= fulltitle %>">
+	<meta property="twitter:title" content="<%= fulltitle %>">
+	<meta name="description" content="<%= meta.description %>">
+	<meta property="og:description" content="<%= meta.description %>">
+	<meta property="twitter:description" content="<%= meta.description %>">
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://fabio.sangregorio.dev/images/logo.svg">
 	<meta property="twitter:image" content="https://fabio.sangregorio.dev/images/logo.svg">
@@ -30,7 +31,6 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="/css/bundle.min.css">
-
 </head>
 
 <body class="<%= typeof bodyclasses != 'undefined'? bodyclasses : '' %>">
