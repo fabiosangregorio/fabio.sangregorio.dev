@@ -1,6 +1,6 @@
 module.exports = {
+  lang: 'it',
   meta: {
-    lang: 'it',
     title: 'developer, studente e amante degli sci',
     description: 'Sono un laureando di ingegneria informatica e sto attualmente lavorando come frontend web developer a Bergamo. Posso aiutarti a costruire qualsiasi cosa web e software.',
   },
