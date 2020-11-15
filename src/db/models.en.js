@@ -65,9 +65,9 @@ module.exports = {
       title:         'Yourbiz',
       link:          'https://www.yourbiz.it',
       role:          'Frontend web developer',
-      start:         'July 2016',
-      end:           'Current',
-      description:   "I've been working at Yourbiz as a part-time developer for 3 years, where I've been building the frontend of the company websites, with special attention to responsiveness, SEO and performance optimization. I've also had experience in the realization of pure HTML/JS web apps, as well as apps based on frameworks such as Angular, AngularJS and React."
+      start:         'Sept. 2019',
+      end:           'Oct 2020',
+      description:   "I worked at Yourbiz as a part-time developer for 4 years, where I've built the frontend of the company websites, with special attention to responsiveness, SEO and performance optimization. I also had experience in the realization of pure HTML/JS web apps, as well as apps based on frameworks such as Angular, AngularJS and React."
     }, {
       title:         'Sorint.LAB',
       link:          'https://www.sorint.it',
@@ -81,33 +81,59 @@ module.exports = {
     {
       title:         'Bergamo University',
       link:          'https://www.unibg.it/',
-      role:          'Computer engineering Master\'s degree',
+      role:          'Computer Engineering Master’s degree',
       start:         'Sept. 2019',
       end:           'Current',
-      description:   "I'm currently attending the first year of my Master's degree in Computer Engineering, where I completed the following core courses: Information Technology 3, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems."
-    }, {
-      title:         'IIS G. Marconi',
-      link:          'https://itisdalmine.edu.it/',
-      role:          'IT high school diploma',
-      start:         'Sept. 2011',
-      end:           'June 2016',
-      description:   "Core courses: C#, MVC, web API, Database, Client-Server architecture, HTML/CSS, Javascript, jQuery.<br />Activities: CCNA1 course, \"Impresa in Azione\" project.<br />Thesis: assigning internships to students based on skills levels."
+      description:   "I'm currently attending the last year of my Master's degree in Computer Engineering, where I completed the following core courses: Software design, Algorithms, Artificial Intelligence, Model Identification and Data Analysis, Information and Transmission Theory, Optimization Models and Algorithms, Business Administration."
+    },  {
+      title:         'Bergamo University',
+      link:          'https://www.unibg.it/',
+      role:          'Computer Engineering Bachelor’s degree',
+      start:         'Sept. 2016',
+      end:           'Sept. 2019',
+      description:   "After high school I achieved my bacherlor's degree in Computer Science Engineering, where I completed the following core courses: Information Technology 2, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems."
     }
   ],
+  // skillstable: [
+  //   [
+  //     ['HTML5 & CSS3', 'Javascript', 'Python', 'Sass'],
+  //     ['jQuery', 'React', 'Git'],
+  //     ['Github']
+  //   ], [
+  //     ['Ruby (on Rails)', 'Typescript', 'MATLAB', 'C#'],
+  //     ['Angular', 'Grunt', 'Node'],
+  //     ['Photoshop']
+  //   ], [
+  //     ['Java', 'C++', 'SQL', 'PHP'],
+  //     ['AngularJS', 'Firebase', 'npm'],
+  //     ['Figma']
+  //   ]
+  // ],
   skills: [
-    [
-      ['HTML5 & CSS3', 'Javascript', 'Python', 'Sass'],
-      ['jQuery', 'React', 'Git'],
-      ['Github']
-    ], [
-      ['Ruby (on Rails)', 'Typescript', 'MATLAB', 'C#'],
-      ['Angular', 'Grunt', 'Node'],
-      ['Photoshop']
-    ], [
-      ['Java', 'C++', 'SQL', 'PHP'],
-      ['AngularJS', 'Firebase', 'npm'],
-      ['Figma']
-    ]
+    {
+      title: 'Frontend Web Development',
+      description: `
+        <p>5 years work experience in the field, building websites, javascript plugins and web apps.</p>
+        <p>Main technologies: HTML5 & CSS3, Sass, Javascript, jQuery, Grunt, Figma, Photoshop, SEO, Responsiveness.</p>
+        <p>Worked with: React, Angular, Typescript.</p>`
+    }, {
+      title: 'Software Development',
+      description: `
+        <p>I have been coding since high school for personal and academic production-ready projects.
+        <p>Main technologies: Python, NodeJS, C#, Java, Open Source.</p>
+        <p>Worked with: Firebase, Scala, MATLAB, C++, Ruby (on Rails), SQL.</p>`
+    }, {
+      title: 'DevOps',
+      description: `
+        <p>2 years experience in CI/CD for testing, linting and deploying work and personal projects.</p>
+        <p>Main technologies: git, Github, Github Actions, Vim, git-crypt.</p>
+        <p>Worked with: Travis CI, Gitlab CI, Docker.</p>`
+    }, {
+      title: 'Soft Skills',
+      description: `
+        <p>I love being organized, and time mangement is a must if working while studying for university.</p>
+        <p>Organization (Notion freak), flexibility, time management, teamwork.</p>`
+    }
   ],
   coding: [
     {
@@ -136,9 +162,9 @@ module.exports = {
   photography: [
     {
       image: {
-        path: '/images/church.jpg',
-        alt: 'Basilica of Santa Maria Maggiore, Bergamo',
-        description: 'Basilica of Santa Maria Maggiore, Bergamo'
+        path: '/images/venice.jpg',
+        alt: 'A canal in Venice, Italy',
+        description: 'A canal in Venice, Italy'
       },
       link: {
         url: 'https://instagram.com/fabio.sang',
