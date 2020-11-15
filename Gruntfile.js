@@ -1,5 +1,5 @@
-const enModels = require("./src/db/models.en.js");
-const itModels = require("./src/db/models.it.js");
+const enModels = require("./src/models/models.en.js");
+const itModels = require("./src/models/models.it.js");
 const sass = require("node-sass");
 const imagemin = {
   mozjpeg: require('imagemin-mozjpeg'),
@@ -163,7 +163,7 @@ module.exports = function (grunt) {
             '!**/*.ejs',
             '!**/js/**',
             '!**/css/**',
-            '!**/db/**'
+            '!**/models/**'
           ],
           dest: 'dist/'
         }],
