@@ -5,7 +5,7 @@ module.exports = {
     description: 'I’m a computer engineering graduate currently working as a frontend web developer in Bergamo, Italy. I can help you with building all-things web and software.'
   },
   header: {
-    langlink: 'italian version',
+    langlink: '/it',
     about: 'about',
     contact: 'contact'
   },

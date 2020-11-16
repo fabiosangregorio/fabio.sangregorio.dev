@@ -5,7 +5,7 @@ module.exports = {
     description: 'Sono un laureando di ingegneria informatica e sto attualmente lavorando come frontend web developer a Bergamo. Posso aiutarti a costruire qualsiasi cosa web e software.',
   },
   header: {
-    langlink: 'versione inglese', 
+    langlink: '/en', 
     about: 'su di me',
     contact: 'contattami'
   },
