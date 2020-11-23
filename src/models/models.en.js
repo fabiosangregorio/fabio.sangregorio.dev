@@ -44,6 +44,13 @@ module.exports = {
   },
   jobs: [
     {
+      title: 'SAP Labs France',
+      link: 'https://www.sap.com/',
+      role: 'Security Research Intern',
+      start: 'Nov. 2020',
+      end: 'Current',
+      description: "I'm starting a five-month-long internship in the Security Research team in Mougins, France. I will be working on the public repository \"credential-digger\", a tool to prevent and identify data leaks in code repositories such as passwords and API keys."
+    }, {
       title: 'Yourbiz',
       link: 'https://www.yourbiz.it',
       role: 'Frontend web developer',
@@ -74,6 +81,13 @@ module.exports = {
       start: 'Sept. 2016',
       end: 'Sept. 2019',
       description: "After high school I achieved my bacherlor's degree in Computer Science Engineering, where I completed the following core courses: Information Technology 2, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems."
+    }, {
+      title:         'IIS G. Marconi',
+      link:          'https://itisdalmine.edu.it/',
+      role:          'IT high school diploma',
+      start:         'June 2016',
+      end:           'Sept. 2011',
+      description:   "Core courses: C#, MVC, web API, Database, Client-Server architecture, HTML/CSS, Javascript, jQuery.<br />Activities: CCNA1 course, \"Impresa in Azione\" project.<br />Thesis: assigning internships to students based on skills levels."
     }
   ],
   skills: [

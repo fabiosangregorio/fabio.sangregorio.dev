@@ -44,6 +44,13 @@ module.exports = {
   },
   jobs: [
     {
+      title: 'SAP Labs France',
+      link: 'https://www.sap.com/',
+      role: 'Tirocinio Security Research',
+      start: 'Nov. 2020',
+      end: 'Presente',
+      description: "Sto iniziando un tirocinio della lunghezza di cinque mesi nel team di Security Research in Mougins, Francia. Lavorerò sulla repository pubblica \"credential-digger\", un tool per prevenire ed identificare data leak in repository di codice, come password e chiavi API."
+    }, {
       title: 'Yourbiz',
       link: 'https://www.yourbiz.it',
       role: 'Frontend web developer',
@@ -74,6 +81,13 @@ module.exports = {
       start: 'Sett. 2011',
       end: 'Giugno 2016',
       description: "Corsi frequentati: C#, MVC, web API, Database, architettura Client-Server, HTML/CSS, Javascript, jQuery.<br />Attività: corso CCNA1, progetto \"Impresa in Azione\".<br />Tesi: assegnamento di tirocini basato sui livelli di abilità degli studenti."
+    }, {
+      title:         'IIS G. Marconi',
+      link:          'https://itisdalmine.edu.it/',
+      role:          'Diploma di scuola superiore',
+      start:         'Giugno 2016',
+      end:           'Sett. 2011',
+      description:   "Corsi principali: C#, MVC, web API, Database, architettura Client-Server, HTML/CSS, Javascript, jQuery.<br />Attività: corso CCNA1 , Progetto \"Impresa in Azione\"<br />Tesi: assegnamento di tirocini basato sui livelli di abilità degli studenti."
     }
   ],
   skills: [
