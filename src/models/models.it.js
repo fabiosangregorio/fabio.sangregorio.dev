@@ -116,6 +116,24 @@ module.exports = {
         <p>Organizzazione (Notion freak), flessibilità, gestione del tempo, teamwork.</p>`
     }
   ],
+  competitions: [
+    {
+      year: '2020',
+      title: 'Team vincitore dell\'hackathon "Download Innovation',
+      description: `
+      Vinto il premio di 2500€ per la categoria "miglior realizzazione" con il team SSH-IMPATICI, dove è stata realizzata l'app mobile "Beelder" nell'hackathon della durata di 48 ore organizzato da Sorint.LAB. La repository può essere trovata <a href="https://github.com/ssh-impatici/download-hackathon-2020" target="_blank" class="link--decorate">qui</a> e il certificato <a href="/documents/download-innovation.pdf" target="_blank" class="link--decorate">qui</a>.`
+    }, {
+      year: '2020',
+      title: '127th posto in classifica mondiale alla Reply Code Challenge',
+      description: `
+      Completata la coding challenge della durata di 4 ore con il team Replallari, totalizzando 16.769.647 punti e posizionandoci 127esimi in classifica globale. La soluzione è stata sviluppata in Scala. <a href="/documents/reply-challenge.pdf" target="_blank" class="link--decorate">Qui</a> si può trovare il certificato di partecipazione e la <a href="https://github.com/ssh-impatici/reply-2020-online" target="_blank" class="link--decorate">repository della soluzione</a>.`
+    }, {
+      year: '2020',
+      title: '163th posto in Italia al Google Hash code',
+      description: `
+      Completata la coding challenge della durata di 4 ore con il team hashipicchia, totalizzando 22.470.857 punti e finendo 163esimi in Italia. La repository della soluzione può essere trovata <a href="https://github.com/ssh-impatici/hashcode-2020-online" target="_blank" class="link--decorate">qui</a>.`
+    }
+  ],
   coding: {
     title: 'Coding.',
     description: 'Contribuisco occasionalmente a progetti open source su Github, ma principalmente spendo il mio tempo a cercare risposte su stackoverflow. Ho anche alcuni progetti personali che non ho mai il tempo di perseguire, eccone alcuni.',
