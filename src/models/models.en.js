@@ -5,7 +5,7 @@ module.exports = {
     description: 'I’m a computer engineering graduate currently working as a frontend web developer in Bergamo, Italy. I can help you with building all-things web and software.'
   },
   header: {
-    langlink: '/it',
+    langlink: 'it',
     about: 'about',
     contact: 'contact'
   },
@@ -23,6 +23,7 @@ module.exports = {
     jobs: 'I worked with amazing people.',
     education: 'I\'m also currently studying.',
     skills: 'They allowed me to learn some powerful skills.',
+    competitions: 'I love participating in coding competitions.',
     about: {
       title: 'Want to know more about me?',
       link: 'Visit my about page'
@@ -49,13 +50,13 @@ module.exports = {
       role: 'Security Research Intern',
       start: 'Nov. 2020',
       end: 'Current',
-      description: "I'm starting a five-month-long internship in the Security Research team in Mougins, France. I will be working on the public repository \"credential-digger\", a tool to prevent and identify data leaks in code repositories such as passwords and API keys."
+      description: "I'm starting a five-months-long internship in the Security Research team in Mougins, France. I will be working on the public repository \"credential-digger\", a tool to prevent and identify data leaks in code repositories such as passwords and API keys."
     }, {
       title: 'Yourbiz',
       link: 'https://www.yourbiz.it',
       role: 'Frontend web developer',
-      start: 'Sept. 2019',
-      end: 'Oct 2020',
+      start: 'June 2016',
+      end: 'Oct. 2020',
       description: "I worked at Yourbiz as a part-time developer for 4 years, where I've built the frontend of the company websites, with special attention to responsiveness, SEO and performance optimization. I also had experience in the realization of pure HTML/JS web apps, as well as apps based on frameworks such as Angular, AngularJS and React."
     }, {
       title: 'Sorint.LAB',
@@ -85,8 +86,8 @@ module.exports = {
       title:         'IIS G. Marconi',
       link:          'https://itisdalmine.edu.it/',
       role:          'IT high school diploma',
-      start:         'June 2016',
-      end:           'Sept. 2011',
+      start:         'Sept. 2011',
+      end:           'June 2016',
       description:   "Core courses: C#, MVC, web API, Database, Client-Server architecture, HTML/CSS, Javascript, jQuery.<br />Activities: CCNA1 course, \"Impresa in Azione\" project.<br />Thesis: assigning internships to students based on skills levels."
     }
   ],
@@ -114,6 +115,25 @@ module.exports = {
       description: `
         <p>I love being organized, and time mangement is a must if working while studying for university.</p>
         <p>Organization (Notion freak), flexibility, time management, teamwork.</p>`
+    }
+  ],
+  competitions: [
+    {
+      year: '2020',
+      title: 'Winning team for the “Download Innovation” hackathon',
+      description: `
+      Won the 2500€ prize for the "best realization" award with the team SSH-IMPATICI, where we realized the mobile app "Beelder" in the 48-hour-long hackathon organized by Sorint.LAB. The repository can be found <a href="https://github.com/ssh-impatici/download-hackathon-2020" target="_blank" class="link--decorate">here</a> and the certificate can be found <a href="/documents/download-innovation.pdf" target="_blank" class="link--decorate">here</a>.
+      `
+    }, {
+      year: '2020',
+      title: '127th place worldwide at Reply Code Challenge',
+      description: `
+      Completed the 4-hour-long coding challenge with the team Replallari, totalizing 16.769.647 points and ending 127th place worldwide. The solution was developed in Scala. <a href="/documents/reply-challenge.pdf" target="_blank" class="link--decorate">Here</a> you can find the certificate of attendance and the <a href="https://github.com/ssh-impatici/reply-2020-online" target="_blank" class="link--decorate">solution repository</a>.`
+    }, {
+      year: '2020',
+      title: '163th place in Italy at Google Hash code',
+      description: `
+      Completed the 4-hour-long Google Hash code online qualification round with the team hashipicchia, totalizing 22.470.857 points and finishing 163th place in Italy. The solution repository can be found <a href="https://github.com/ssh-impatici/hashcode-2020-online" target="_blank" class="link--decorate">here</a>.`
     }
   ],
   coding: {

@@ -112,16 +112,31 @@
     margin-bottom: 1.9375rem
 
   .skills
-    @extend %flex-as
-    flex-wrap: wrap
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 5.3125rem 0
 
   .skills__item
-    width: 50%
-    margin-bottom: 6.25rem
-    padding-right: 15px
+    padding-right: 0.9375rem
 
   .skills__iteminner
     max-width: 36.875rem
+
+  .competitions__h1
+    margin-bottom: 8.5rem
+    max-width: 41.75rem
+
+  .competition
+    margin-bottom: 5.3125rem
+    max-width: 62.5rem
+    position: relative
+
+  .competition__year
+    font-weight: 500
+    font-size: 1.125rem
+    position: absolute
+    left: -100px
+    line-height: 2.8125rem
 
   .visit
     @extend %flex-ac-jb
@@ -148,6 +163,11 @@
     cursor: url('/images/plus--dark.svg') 25 25, auto
     &.js-experiences-open
       cursor: url('/images/times--dark.svg') 22 22, auto
+
+@media screen and (max-width: 1750px)
+  .home
+    .competition__year
+      position: static
 
 @media screen and (max-width: 1400px)
   .home
@@ -261,7 +281,8 @@
     .skills__h1
       margin-bottom: 3.75rem
     .skills
-      display: block
+      grid-template-columns: 1fr
+      grid-gap: 2.75rem 0
     .skills__item, .skills__iteminner
       width: 100%
       max-width: none
@@ -271,6 +292,14 @@
       font-size: 0.9375rem
       &:not(:last-child):after
         content: ','
+
+    .competitions__h1
+      margin-bottom: 3.75rem
+    .competition
+      margin-bottom: 2.75rem
+    .competition__year
+      font-size: 0.875rem
+
     .slider__container
       max-width: none
     .slider__counter
