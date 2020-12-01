@@ -5,7 +5,7 @@ module.exports = {
     description: 'I’m a computer engineering graduate currently working as a frontend web developer in Bergamo, Italy. I can help you with building all-things web and software.'
   },
   header: {
-    langlink: '/it',
+    langlink: 'it',
     about: 'about',
     contact: 'contact'
   },
@@ -50,13 +50,13 @@ module.exports = {
       role: 'Security Research Intern',
       start: 'Nov. 2020',
       end: 'Current',
-      description: "I'm starting a five-month-long internship in the Security Research team in Mougins, France. I will be working on the public repository \"credential-digger\", a tool to prevent and identify data leaks in code repositories such as passwords and API keys."
+      description: "I'm starting a five-months-long internship in the Security Research team in Mougins, France. I will be working on the public repository \"credential-digger\", a tool to prevent and identify data leaks in code repositories such as passwords and API keys."
     }, {
       title: 'Yourbiz',
       link: 'https://www.yourbiz.it',
       role: 'Frontend web developer',
-      start: 'Sept. 2019',
-      end: 'Oct 2020',
+      start: 'June 2016',
+      end: 'Oct. 2020',
       description: "I worked at Yourbiz as a part-time developer for 4 years, where I've built the frontend of the company websites, with special attention to responsiveness, SEO and performance optimization. I also had experience in the realization of pure HTML/JS web apps, as well as apps based on frameworks such as Angular, AngularJS and React."
     }, {
       title: 'Sorint.LAB',
@@ -86,8 +86,8 @@ module.exports = {
       title:         'IIS G. Marconi',
       link:          'https://itisdalmine.edu.it/',
       role:          'IT high school diploma',
-      start:         'June 2016',
-      end:           'Sept. 2011',
+      start:         'Sept. 2011',
+      end:           'June 2016',
       description:   "Core courses: C#, MVC, web API, Database, Client-Server architecture, HTML/CSS, Javascript, jQuery.<br />Activities: CCNA1 course, \"Impresa in Azione\" project.<br />Thesis: assigning internships to students based on skills levels."
     }
   ],

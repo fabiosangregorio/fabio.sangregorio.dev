@@ -5,7 +5,7 @@ module.exports = {
     description: 'Sono un laureando di ingegneria informatica e sto attualmente lavorando come frontend web developer a Bergamo. Posso aiutarti a costruire qualsiasi cosa web e software.',
   },
   header: {
-    langlink: '/en', 
+    langlink: 'en', 
     about: 'su di me',
     contact: 'contattami'
   },
@@ -23,6 +23,7 @@ module.exports = {
     jobs: 'Ho lavorato con persone meravigliose.',
     education: 'Attualmente sto anche studiando.',
     skills: 'Mi hanno permesso di apprendere grandi abilità.',
+    competitions: 'Amo partecipare alle competizioni di coding.',
     about: {
       title: 'Vuoi conoscere meglio chi sono?',
       link: 'Visita la mia pagina "Su di me"'
@@ -48,14 +49,14 @@ module.exports = {
       link: 'https://www.sap.com/',
       role: 'Tirocinio Security Research',
       start: 'Nov. 2020',
-      end: 'Presente',
+      end: 'Corrente',
       description: "Sto iniziando un tirocinio della lunghezza di cinque mesi nel team di Security Research in Mougins, Francia. Lavorerò sulla repository pubblica \"credential-digger\", un tool per prevenire ed identificare data leak in repository di codice, come password e chiavi API."
     }, {
       title: 'Yourbiz',
       link: 'https://www.yourbiz.it',
       role: 'Frontend web developer',
       start: 'Luglio 2016',
-      end: 'Corrente',
+      end: 'Ott. 2020',
       description: "Lavoro a Yourbiz come developer part-time da 3 anni, dove ho costruito il frontend dei siti realizzati dall'azienda, con particolare attenzione al responsive, SEO e ottimizzazione delle performance. Ho anche avuto esperienza nella realizzazione di web app HTML/JS pure, oltre ad app basate su framework come Angular, AngularJS e React."
     }, {
       title: 'Sorint.LAB',
@@ -73,20 +74,20 @@ module.exports = {
       role: 'Laurea Magistrale in Ingegneria Informatica',
       start: 'Sett. 2019',
       end: 'Corrente',
-      description: "Sto attualmente frequentando il primo anno di Laurea Magistrale in Ingegneria Informatica, in cui ho completato i seguenti corsi: Informatica 3, Basi di dati 2, Automazione Industriale, Ingegneria del Software, Statistica 2, Sistemi di Controllo di Gestione"
+      description: "Sto attualmente frequentando il secondo anno di Laurea Magistrale in Ingegneria Informatica, in cui ho completato i seguenti corsi: Informatica 3, Basi di dati 2, Automazione Industriale, Ingegneria del Software, Statistica 2, Sistemi di Controllo di Gestione"
     }, {
-      title: 'IIS G. Marconi',
-      link: 'https://itisdalmine.edu.it/',
-      role: 'Diploma di Scuola Superiore',
-      start: 'Sett. 2011',
-      end: 'Giugno 2016',
-      description: "Corsi frequentati: C#, MVC, web API, Database, architettura Client-Server, HTML/CSS, Javascript, jQuery.<br />Attività: corso CCNA1, progetto \"Impresa in Azione\".<br />Tesi: assegnamento di tirocini basato sui livelli di abilità degli studenti."
+      title: 'Università di Bergamo',
+      link: 'https://www.unibg.it/',
+      role: 'Laurea Triennale in Ingegneria Informatica',
+      start: 'Sett. 2016',
+      end: 'Sett. 2019',
+      description: "Dopo le scuole superiori ho ottenuto il Diploma di Laurea Triennale in Ingegneria informatica, dove ho completato i seguenti corsi principali: Informatica 2, Basi di Dati 2, Automazione Industriale, Ingegneria del Software, Statistica 2, Sistemi di Controllo di Gestione"
     }, {
       title:         'IIS G. Marconi',
       link:          'https://itisdalmine.edu.it/',
       role:          'Diploma di scuola superiore',
-      start:         'Giugno 2016',
-      end:           'Sett. 2011',
+      start:         'Sett. 2011',
+      end:           'Giugno 2016',
       description:   "Corsi principali: C#, MVC, web API, Database, architettura Client-Server, HTML/CSS, Javascript, jQuery.<br />Attività: corso CCNA1 , Progetto \"Impresa in Azione\"<br />Tesi: assegnamento di tirocini basato sui livelli di abilità degli studenti."
     }
   ],
@@ -124,12 +125,12 @@ module.exports = {
       Vinto il premio di 2500€ per la categoria "miglior realizzazione" con il team SSH-IMPATICI, dove è stata realizzata l'app mobile "Beelder" nell'hackathon della durata di 48 ore organizzato da Sorint.LAB. La repository può essere trovata <a href="https://github.com/ssh-impatici/download-hackathon-2020" target="_blank" class="link--decorate">qui</a> e il certificato <a href="/documents/download-innovation.pdf" target="_blank" class="link--decorate">qui</a>.`
     }, {
       year: '2020',
-      title: '127th posto in classifica mondiale alla Reply Code Challenge',
+      title: '127esimo posto in classifica mondiale alla Reply Code Challenge',
       description: `
       Completata la coding challenge della durata di 4 ore con il team Replallari, totalizzando 16.769.647 punti e posizionandoci 127esimi in classifica globale. La soluzione è stata sviluppata in Scala. <a href="/documents/reply-challenge.pdf" target="_blank" class="link--decorate">Qui</a> si può trovare il certificato di partecipazione e la <a href="https://github.com/ssh-impatici/reply-2020-online" target="_blank" class="link--decorate">repository della soluzione</a>.`
     }, {
       year: '2020',
-      title: '163th posto in Italia al Google Hash code',
+      title: '163esimo posto in Italia al Google Hash code',
       description: `
       Completata la coding challenge della durata di 4 ore con il team hashipicchia, totalizzando 22.470.857 punti e finendo 163esimi in Italia. La repository della soluzione può essere trovata <a href="https://github.com/ssh-impatici/hashcode-2020-online" target="_blank" class="link--decorate">qui</a>.`
     }
