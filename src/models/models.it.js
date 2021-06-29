@@ -147,11 +147,11 @@ module.exports = {
           title: 'github/telereddit'
         }
       }, {
-        title: 'remindme',
-        description: 'Un reminder bot per Telegram.<br/>Puoi rispondere a un messaggio di Telegram con “!remindme 2h 5m” e il bot ti ricorderà quel messsaggio (con un link ad esso) in due ore e cinque minuti. Come puoi immaginare mi piacciono reddit e Telegram :)',
+        title: 'google-calendar-quick-duplicate',
+        description: "Una semplice estensione di Chrome per duplicare rapidamente gli eventi su Google Calendar. Questa estensione aggiunge un'icona 'Duplica evento' sulla scheda di anteprima dell'evento, permettendoti di duplicarlo rapidamente con un solo clic.",
         link: {
-          url: 'https://github.com/fabiosangregorio/remindme',
-          title: 'github/remindme'
+          url: 'https://github.com/fabiosangregorio/google-calendar-quick-duplicate',
+          title: 'github/google-calendar-quick-duplicate'
         }
       }, {
         title: 'links-disabler',
