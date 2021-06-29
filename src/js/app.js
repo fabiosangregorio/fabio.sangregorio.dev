@@ -1,5 +1,4 @@
 document.ready(function () {
-  initFlickity();
   AOS.init({
     duration: 500,
     easing: 'ease-sine-out',
@@ -12,20 +11,18 @@ document.ready(function () {
 
 window.addEventListener("load", function () {
   initRevealImage();
+  initFlickity();
 }, false);
 
 function initFlickity() {
   var aboutSliders = [];
-  // TODO: Initialize autoplay only on scroll
   if (!!document.querySelector('.slider')) {
     for (var el of document.querySelectorAll('.slider')) {
       var flkty = new Flickity(el, {
-        fade: true,
         pageDots: false,
         prevNextButtons: false,
         autoPlay: 4000,
         pauseAutoPlayOnHover: false,
-        selectedAttraction: 0.01,
         wrapAround: true
       });
     }
@@ -38,12 +35,10 @@ function initFlickity() {
     if (window.innerWidth <= 991 && !aboutSliders.length) {
       for (var el of document.querySelectorAll('.mobile-slider')) {
         var slider = new Flickity(el, {
-          fade: true,
           pageDots: false,
           prevNextButtons: false,
           autoPlay: 4000,
           pauseAutoPlayOnHover: false,
-          selectedAttraction: 0.01,
           wrapAround: true,
         });
         aboutSliders.push(slider);
