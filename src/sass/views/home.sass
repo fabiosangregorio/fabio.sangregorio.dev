@@ -39,6 +39,12 @@
     grid-template-columns: 1fr 1fr
     grid-gap: 5.3125rem 0
 
+  .experiences__opener
+    font-size: 16px
+    font-weight: normal
+    margin-top: 30px
+    cursor: pointer
+
   .experiences__h1
     max-width: 32.8125rem
     margin-bottom: 3.925rem
@@ -72,11 +78,6 @@
   .experience__description
     font-size: 1.125rem
     margin-top: 1.1375rem
-
-  .js-experiences-section
-    cursor: url('/images/plus.svg') 25 25, auto
-    &.js-experiences-open
-      cursor: url('/images/times.svg') 22 22, auto
 
   .js-experience-animate
     opacity: 0
@@ -155,15 +156,6 @@
   .slider__counter
     display: none
 
-  .experiences__mobile-opener
-    display: none
-
-.dark-theme.home 
-  .js-experiences-section
-    cursor: url('/images/plus--dark.svg') 25 25, auto
-    &.js-experiences-open
-      cursor: url('/images/times--dark.svg') 22 22, auto
-
 @media screen and (max-width: 1750px)
   .home
     .competition__year
@@ -219,7 +211,7 @@
       justify-content: flex-start
       flex-flow: column
       grid-gap: 2.75rem 3.75rem
-    .experiences__mobile-opener
+    .experiences__opener
       font-size: 12px
       font-weight: 400
       display: block

@@ -66,16 +66,17 @@ function initRevealImage() {
 
 function initExperienceAnimation() {
   if (!document.querySelector('.js-experiences-section')) return;
-  document.querySelector('.js-experiences-section').addEventListener('click', function () {
-    var togglers = this.querySelectorAll('.js-experiences-toggle');
-    if (this.classList.contains('js-experiences-open')) {
-      this.classList.remove('js-experiences-open');
+  document.querySelector('.js-experiences-section .experiences__opener').addEventListener('click', function () {
+    var target = document.querySelector('.js-experiences-section');
+    var togglers = target.querySelectorAll('.js-experiences-toggle');
+    if (target.classList.contains('js-experiences-open')) {
+      target.classList.remove('js-experiences-open');
       for (var toggler of togglers) toggler.innerText = 'show';
-      toggleAnimationClasses(this);
+      toggleAnimationClasses(target);
     } else {
-      this.classList.add('js-experiences-open');
+      target.classList.add('js-experiences-open');
       for (var toggler of togglers) toggler.innerText = 'hide';
-      toggleAnimationClasses(this);
+      toggleAnimationClasses(target);
     }
   });
 
