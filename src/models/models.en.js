@@ -2,7 +2,7 @@ module.exports = {
   lang: 'en',
   meta: {
     title: 'developer, student and ski lover',
-    description: 'I’m a computer engineering graduate currently working as a frontend web developer in Bergamo, Italy. I can help you with building all-things web and software.'
+    description: 'I’m a software engineer currently working as an Android Engineer in Milan, Italy. I can help you with building all-things software and web.'
   },
   header: {
     langlink: 'it',
@@ -17,12 +17,12 @@ module.exports = {
   home: {
     title: {
       line1: 'Hey there!',
-      line2: 'I’m Fabio, developer, student and ski lover.',
+      line2: 'I’m Fabio, software engineer and ski lover.',
     },
-    subtitle: 'I’m a computer engineering graduate currently working as a frontend web developer in Bergamo, Italy. I can help you with building all-things web - especially web apps - and software.<br>How can I help you?',
+    subtitle: 'I’m a software engineer currently working as an Android Engineer in Milan, Italy. I can help you with building all-things software and web. <br>How can I help you?',
     jobs: 'I worked with amazing people.',
-    education: 'I\'m also currently studying.',
-    skills: 'They allowed me to learn some powerful skills.',
+    education: 'I also had brilliant professors.',
+    skills: 'They enabled me to learn some powerful skills.',
     competitions: 'I love participating in coding competitions.',
     about: {
       title: 'Want to know more about me?',
@@ -36,21 +36,28 @@ module.exports = {
     },
     notes: {
       line1: 'Resulted in 1 broken finger and 1 fractured & dislocated shoulder *so far*',
-      line2: 'Seriously, more than 7,000 episodes registered on'
+      line2: 'Seriously, more than 8,000 episodes registered on'
     },
     description: `
     Being born in Bergamo, italian is my mother tongue. I also know English fairly well though, so sometimes I help out translating the web, with tools such as Wikipedia and Google Translate Community.<br>
-    I love working out at the gym in the morning, before heading to work and university. I love organization. I love coffee. I love matte black.
+    I love working out at the gym in the morning, before heading to work. I love organization. I love coffee. I love matte black.
     `
   },
   jobs: [
     {
+      title: 'Bending Spoons',
+      link: 'https://www.bendingspoons.com/',
+      role: 'Android Engineer',
+      start: 'Sept. 2021',
+      end: 'Current',
+      description: "I'm just now starting to work at Bending Spoons as an Android Engineer. I will be developing beautiful apps in Kotlin. I'm really excited!"
+    }, {
       title: 'SAP Labs France',
       link: 'https://www.sap.com/',
       role: 'Security Research Intern',
       start: 'Nov. 2020',
-      end: 'Current',
-      description: "I'm starting a five-months-long internship in the Security Research team in Mougins, France. I will be working on the public repository \"credential-digger\", a tool to prevent and identify data leaks in code repositories such as passwords and API keys."
+      end: 'Apr. 2021',
+      description: "In my five-months-long internship in the Cyber Threat Intelligence team of SAP Security Research, I developed the public repository Credential Digger, a Github scanning tool to prevent and identify data leaks in code repositories such as passwords and API keys. My goal was to enhance its usability, performance and reliability."
     }, {
       title: 'Yourbiz',
       link: 'https://www.yourbiz.it',
@@ -58,14 +65,15 @@ module.exports = {
       start: 'June 2016',
       end: 'Oct. 2020',
       description: "I worked at Yourbiz as a part-time developer for 4 years, where I've built the frontend of the company websites, with special attention to responsiveness, SEO and performance optimization. I also had experience in the realization of pure HTML/JS web apps, as well as apps based on frameworks such as Angular, AngularJS and React."
-    }, {
-      title: 'Sorint.LAB',
-      link: 'https://www.sorint.it',
-      role: 'R&D dpt. school internship',
-      start: 'June 2015',
-      end: 'June 2015',
-      description: "During the school internship at Sorint I studied the OrientDB graph database, and I built a Java web app for internal use with the Spring framework and Hibernate. I also attended the following corporate training courses: VMware, OrientDB, MySQL, Java, Spring Framework 4.0, Hibernate, Spring Security."
-    }
+    }, 
+    // {
+    //   title: 'Sorint.LAB',
+    //   link: 'https://www.sorint.it',
+    //   role: 'R&D dpt. school internship',
+    //   start: 'June 2015',
+    //   end: 'June 2015',
+    //   description: "During the school internship at Sorint I studied the OrientDB graph database, and I built a Java web app for internal use with the Spring framework and Hibernate. I also attended the following corporate training courses: VMware, OrientDB, MySQL, Java, Spring Framework 4.0, Hibernate, Spring Security."
+    // }
   ],
   education: [
     {
@@ -73,15 +81,15 @@ module.exports = {
       link: 'https://www.unibg.it/',
       role: 'Computer Engineering Master’s degree',
       start: 'Sept. 2019',
-      end: 'Current',
-      description: "I'm currently attending the last year of my Master's degree in Computer Engineering, where I completed the following core courses: Software design, Algorithms, Artificial Intelligence, Model Identification and Data Analysis, Information and Transmission Theory, Optimization Models and Algorithms, Business Administration."
+      end: 'Lug. 2021',
+      description: "I obtained my Master's degree in Computer Engineering, where I completed the following core courses: Software design, Algorithms, Computer Systems Security, Model Identification and Data Analysis, Optimization Models and Algorithms, Business Administration.<br>Thesis: Cyber Threat Intelligence: Data Leaks Prevention and Identification."
     }, {
       title: 'Bergamo University',
       link: 'https://www.unibg.it/',
       role: 'Computer Engineering Bachelor’s degree',
       start: 'Sept. 2016',
       end: 'Sept. 2019',
-      description: "After high school I achieved my bacherlor's degree in Computer Science Engineering, where I completed the following core courses: Information Technology 2, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems."
+      description: "After high school I achieved my bacherlor's degree in Computer Science Engineering, where I completed the following core courses: Information Technology 2, Databases 2, Industrial Automation, Software Engineering, Statistics 2, Management Control Systems.<br>Thesis: Tool to search for a systemic bias in bibliography linked to the composition of the program committee of scientific conferences."
     }, {
       title:         'IIS G. Marconi',
       link:          'https://itisdalmine.edu.it/',
@@ -96,8 +104,8 @@ module.exports = {
       title: 'Frontend Web Development',
       description: `
         <p>5 years work experience in the field, building websites, javascript plugins and web apps.</p>
-        <p>Main technologies: HTML5 & CSS3, Sass, Javascript, jQuery, Grunt, Figma, Photoshop, SEO, Responsiveness.</p>
-        <p>Worked with: React, Angular, Typescript.</p>`
+        <p>Main technologies: HTML5 & CSS3, Sass, Javascript, jQuery, Grunt, React, Typescript, SEO, Responsiveness, Figma, Photoshop.</p>
+        <p>Worked with: Angular, AngularJS.</p>`
     }, {
       title: 'Software Development',
       description: `
@@ -149,7 +157,7 @@ module.exports = {
         }
       }, {
         title: 'google-calendar-quick-duplicate',
-        description: 'A simple Chrome Extension to quickly duplicate events on Google Calendar. This extension adds a "Duplicate event" icon on the event preview card, letting you quickly duplicate it with one single click.',
+        description: 'A simple Chrome Extension to quickly duplicate events on Google Calendar. This extension adds a "Duplicate event" icon on the event preview card, letting you quickly duplicate it with one click.',
         link: {
           url: 'https://github.com/fabiosangregorio/google-calendar-quick-duplicate',
           title: 'github/google-calendar-quick-duplicate'

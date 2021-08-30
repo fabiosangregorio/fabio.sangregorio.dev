@@ -2,7 +2,7 @@ module.exports = {
   lang: 'it',
   meta: {
     title: 'developer, studente e amante degli sci',
-    description: 'Sono un laureando di ingegneria informatica e sto attualmente lavorando come frontend web developer a Bergamo. Posso aiutarti a costruire qualsiasi cosa web e software.',
+    description: 'Sono un ingengere informatico e sto attualmente lavorando come Android Engineer a Milano. Posso aiutarti a costruire qualsiasi cosa software e web.',
   },
   header: {
     langlink: 'en', 
@@ -17,11 +17,11 @@ module.exports = {
   home: {
     title: {
       line1: 'Hey!',
-      line2: 'Sono Fabio, developer, studente e amante degli sci.',
+      line2: 'Sono Fabio, ingegnere informatico e amante degli sci.',
     },
-    subtitle: 'Sono un laureando di ingegneria informatica e sto attualmente lavorando come frontend web developer a Bergamo. Posso aiutarti a costruire qualsiasi cosa web e software.<br>Come posso aiutarti?',
+    subtitle: 'Sono un ingengere informatico e sto attualmente lavorando come Android Engineer a Milano. Posso aiutarti a costruire qualsiasi cosa software e web.<br>Come posso aiutarti?',
     jobs: 'Ho lavorato con persone meravigliose.',
-    education: 'Attualmente sto anche studiando.',
+    education: 'Ho anche avuto professori brillanti.',
     skills: 'Mi hanno permesso di apprendere grandi abilità.',
     competitions: 'Amo partecipare alle competizioni di coding.',
     about: {
@@ -36,21 +36,28 @@ module.exports = {
     },
     notes: {
       line1: 'Risultato in 1 dito rotto e 1 spalla fratturata & lussata *per ora*',
-      line2: 'Seriamente, più di 7,000 episodi registrati su'
+      line2: 'Seriamente, più di 8,000 episodi registrati su'
     },
     description: `
     Essendo nato a Bergamo, l'italiano è la mia lingua madre. Conosco anche abbastanza bene l'inglese però, quindi a volte aiuto a tradurre il web, con strumenti come Wikipedia e la community di Google Translate.<br>
-    Amo allenarmi in palestra al mattino, prima di andare al lavoro e università. Amo l'organizzazione. Amo il caffè. Amo il nero opaco.
+    Amo allenarmi in palestra al mattino, prima di andare al lavoro. Amo l'organizzazione. Amo il caffè. Amo il nero opaco.
     `
   },
   jobs: [
     {
+      title: 'Bending Spoons',
+      link: 'https://www.bendingspoons.com/',
+      role: 'Android Engineer',
+      start: 'Sept. 2021',
+      end: 'Corrente',
+      description: "Sto iniziando a lavorare a Bending Spoons come Android Engineer. Svilupperò bellissime app in Kotlin. Sono veramente eccitato!"
+    }, {
       title: 'SAP Labs France',
       link: 'https://www.sap.com/',
       role: 'Tirocinio Security Research',
       start: 'Nov. 2020',
-      end: 'Corrente',
-      description: "Sto iniziando un tirocinio della lunghezza di cinque mesi nel team di Security Research in Mougins, Francia. Lavorerò sulla repository pubblica \"credential-digger\", un tool per prevenire ed identificare data leak in repository di codice, come password e chiavi API."
+      end: 'Apr. 2021',
+      description: "Nel tirocinio di cinque mesi nel team di Security Research a Mougins, in Francia, ho lavorato sulla repository pubblica Credential Digger, uno strumento per prevenire e identificare i data leaks nei repository come password e chiavi API, con lo scopo di aumentarne l'affidabilità, le performance e usabilità."
     }, {
       title: 'Yourbiz',
       link: 'https://www.yourbiz.it',
@@ -58,14 +65,15 @@ module.exports = {
       start: 'Luglio 2016',
       end: 'Ott. 2020',
       description: "Lavoro a Yourbiz come developer part-time da 3 anni, dove ho costruito il frontend dei siti realizzati dall'azienda, con particolare attenzione al responsive, SEO e ottimizzazione delle performance. Ho anche avuto esperienza nella realizzazione di web app HTML/JS pure, oltre ad app basate su framework come Angular, AngularJS e React."
-    }, {
-      title: 'Sorint.LAB',
-      link: 'https://www.sorint.it',
-      role: 'Stage scolastico nel dipartimento R&D',
-      start: 'Giugno 2015',
-      end: 'Giugno 2015',
-      description: "Durante lo stage scolastico a Sorint ho studiato il database a grafi OrientDB, e ho costruito una web app Java ad uso interno mediante il framework Spring e Hibernate. Ho anche partecipato ai seguenti corsi di training aziendali: Mware, OrientDB, MySQL, Java, Spring Framework 4.0, Hibernate, Spring Security."
-    }
+    }, 
+    // {
+    //   title: 'Sorint.LAB',
+    //   link: 'https://www.sorint.it',
+    //   role: 'Stage scolastico nel dipartimento R&D',
+    //   start: 'Giugno 2015',
+    //   end: 'Giugno 2015',
+    //   description: "Durante lo stage scolastico a Sorint ho studiato il database a grafi OrientDB, e ho costruito una web app Java ad uso interno mediante il framework Spring e Hibernate. Ho anche partecipato ai seguenti corsi di training aziendali: Mware, OrientDB, MySQL, Java, Spring Framework 4.0, Hibernate, Spring Security."
+    // }
   ],
   education: [
     {
@@ -73,15 +81,15 @@ module.exports = {
       link: 'https://www.unibg.it/',
       role: 'Laurea Magistrale in Ingegneria Informatica',
       start: 'Sett. 2019',
-      end: 'Corrente',
-      description: "Sto attualmente frequentando il secondo anno di Laurea Magistrale in Ingegneria Informatica, in cui ho completato i seguenti corsi: Informatica 3, Basi di dati 2, Automazione Industriale, Ingegneria del Software, Statistica 2, Sistemi di Controllo di Gestione"
+      end: 'Lug. 2021',
+      description: "Ho conseguito la Laurea Magistrale in Ingegneria Informatica, in cui ho completato i seguenti corsi principali: Ingegneria del Software, Algoritmi, Sicurezza dei Sistemi Informatici, Identificazione dei Modelli e Analisi dei Dati, Modelli e Algoritmi di Ottimizzazione, Gestione Aziendale.<br>Tesi: Cyber Threat Intelligence: Prevenzione e Identificazione di Data Leak."
     }, {
       title: 'Università di Bergamo',
       link: 'https://www.unibg.it/',
       role: 'Laurea Triennale in Ingegneria Informatica',
       start: 'Sett. 2016',
       end: 'Sett. 2019',
-      description: "Dopo le scuole superiori ho ottenuto il Diploma di Laurea Triennale in Ingegneria informatica, dove ho completato i seguenti corsi principali: Informatica 2, Basi di Dati 2, Automazione Industriale, Ingegneria del Software, Statistica 2, Sistemi di Controllo di Gestione"
+      description: "Dopo le scuole superiori ho ottenuto il Diploma di Laurea Triennale in Ingegneria informatica, dove ho completato i seguenti corsi principali: Informatica 2, Basi di Dati 2, Automazione Industriale, Ingegneria del Software, Statistica 2, Sistemi di Controllo di Gestione.<br>Tesi: Strumento per la ricerca di bias sistemico nella bibliografia legato alla composizione dei comitati di programma delle conferenze scientifiche."
     }, {
       title:         'IIS G. Marconi',
       link:          'https://itisdalmine.edu.it/',
@@ -96,8 +104,8 @@ module.exports = {
       title: 'Frontend Web Development',
       description: `
         <p>5 anni di esperienza lavorativa nel costruire siti web, plugin javascript e web app.</p>
-        <p>Tecnologie principali: HTML5 & CSS3, Sass, Javascript, jQuery, Grunt, Figma, Photoshop, SEO, Responsiveness.</p>
-        <p>Lavorato con: React, Angular, Typescript.</p>`
+        <p>Tecnologie principali: HTML5 & CSS3, Sass, Javascript, jQuery, Grunt, React, Typescript, SEO, Responsiveness, Figma, Photoshop.</p>
+        <p>Lavorato con: Angular, AngularJS</p>`
     }, {
       title: 'Software Development',
       description: `
