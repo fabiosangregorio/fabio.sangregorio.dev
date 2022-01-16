@@ -66,18 +66,20 @@ function initRevealImage() {
 
 function initExperienceAnimation() {
   if (!document.querySelector('.js-experiences-section')) return;
-  document.querySelector('.js-experiences-section .experiences__opener').addEventListener('click', function () {
-    var target = document.querySelector('.js-experiences-section');
-    var togglers = target.querySelectorAll('.js-experiences-toggle');
-    if (target.classList.contains('js-experiences-open')) {
-      target.classList.remove('js-experiences-open');
-      for (var toggler of togglers) toggler.innerText = 'show';
-      toggleAnimationClasses(target);
-    } else {
-      target.classList.add('js-experiences-open');
-      for (var toggler of togglers) toggler.innerText = 'hide';
-      toggleAnimationClasses(target);
-    }
+  document.querySelectorAll('.js-experiences-section .experiences__opener').forEach((node) => {
+    node.addEventListener('click', function () {
+      var target = document.querySelector('.js-experiences-section');
+      var togglers = target.querySelectorAll('.js-experiences-toggle');
+      if (target.classList.contains('js-experiences-open')) {
+        target.classList.remove('js-experiences-open');
+        for (var toggler of togglers) toggler.innerText = 'show';
+        toggleAnimationClasses(target);
+      } else {
+        target.classList.add('js-experiences-open');
+        for (var toggler of togglers) toggler.innerText = 'hide';
+        toggleAnimationClasses(target);
+      }
+    });
   });
 
   function toggleAnimationClasses(container) {
