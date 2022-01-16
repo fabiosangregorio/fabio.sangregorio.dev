@@ -19,7 +19,7 @@
     "grunt-sass": "latest",
     "grunt-sitemap": "latest",
     "grunt-sync": "latest",
-    "imagemin-mozjpeg": "latest",
+    "imagemin-mozjpeg": "9.0.0",
     "node-sass": "latest"
   },
   "babel": {
