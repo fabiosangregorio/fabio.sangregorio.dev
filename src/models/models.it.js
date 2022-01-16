@@ -17,9 +17,9 @@ module.exports = {
   home: {
     title: {
       line1: 'Hey!',
-      line2: 'Sono Fabio, ingegnere informatico e amante degli sci.',
+      line2: 'Sono Fabio, e sono un ingegnere informatico.',
     },
-    subtitle: 'Sono un ingengere informatico e sto attualmente lavorando come Android Engineer a Milano. Posso aiutarti a costruire qualsiasi cosa software e web.<br>Come posso aiutarti?',
+    subtitle: 'Sto attualmente lavorando come Android Engineer a Bending Spoons a Milano. Posso aiutarti a costruire qualsiasi cosa software e web.<br>Come posso aiutarti?',
     jobs: 'Ho lavorato con persone meravigliose.',
     education: 'Ho anche avuto professori brillanti.',
     skills: 'Mi hanno permesso di apprendere grandi abilità.',
@@ -39,8 +39,8 @@ module.exports = {
       line2: 'Seriamente, più di 8,000 episodi registrati su'
     },
     description: `
-    Essendo nato a Bergamo, l'italiano è la mia lingua madre. Conosco anche abbastanza bene l'inglese però, quindi a volte aiuto a tradurre il web, con strumenti come Wikipedia e la community di Google Translate.<br>
-    Amo allenarmi in palestra al mattino, prima di andare al lavoro. Amo l'organizzazione. Amo il caffè. Amo il nero opaco.
+    L'italiano è la mia lingua madre (sono nato a Bergamo!). Conosco anche abbastanza bene l'inglese però, quindi a volte aiuto a tradurre il web, con strumenti come Wikipedia e la community di Google Translate.<br>
+    Amo allenarmi in palestra al mattino, prima di andare al lavoro. Amo l'organizzazione. Amo il caffè (e anche il the!). Amo il nero opaco.
     `
   },
   jobs: [
@@ -50,21 +50,21 @@ module.exports = {
       role: 'Android Engineer',
       start: 'Sept. 2021',
       end: 'Corrente',
-      description: "Sto iniziando a lavorare a Bending Spoons come Android Engineer. Svilupperò bellissime app in Kotlin. Sono veramente eccitato!"
+      description: "In questo momento sto lavorando come Android Engineer a Bending Spoons, sviluppando la bellissima app <a href='https://spliceapp.com/' target='_blank' class='link--decorate'>Splice</a>: uno dei video editor più potenti per mobile, usato da milioni di persone. E' stata un'esperienza pazzesca fino ad ora, sono estremamente eccitato!"
     }, {
       title: 'SAP Labs France',
       link: 'https://www.sap.com/',
       role: 'Tirocinio Security Research',
       start: 'Nov. 2020',
       end: 'Apr. 2021',
-      description: "Nel tirocinio di cinque mesi nel team di Security Research a Mougins, in Francia, ho lavorato sulla repository pubblica Credential Digger, uno strumento per prevenire e identificare i data leaks nei repository come password e chiavi API, con lo scopo di aumentarne l'affidabilità, le performance e usabilità."
+      description: "Nel tirocinio di cinque mesi nel team di Security Research di SAP a Mougins, in Francia, ho lavorato sul progetto pubblico <a href='https://github.com/SAP/credential-digger' target='_blank' class='link--decorate'>Credential Digger†</a>, uno strumento per prevenire e identificare i data leaks (come password e chiavi API) nelle repository. Il mio scopo era aumentarne l'affidabilità, le performance e usabilità."
     }, {
       title: 'Yourbiz',
       link: 'https://www.yourbiz.it',
       role: 'Frontend web developer',
       start: 'Luglio 2016',
       end: 'Ott. 2020',
-      description: "Lavoro a Yourbiz come developer part-time da 3 anni, dove ho costruito il frontend dei siti realizzati dall'azienda, con particolare attenzione al responsive, SEO e ottimizzazione delle performance. Ho anche avuto esperienza nella realizzazione di web app HTML/JS pure, oltre ad app basate su framework come Angular, AngularJS e React."
+      description: "Ho lavorato a Yourbiz come developer part-time per 4 anni, dove ho costruito il frontend dei siti realizzati dall'azienda, con particolare attenzione al responsive, SEO e ottimizzazione delle performance. Ho anche avuto esperienza nella realizzazione di web app HTML/JS pure, oltre ad app basate su framework come Angular, AngularJS e React."
     }, 
     // {
     //   title: 'Sorint.LAB',
@@ -110,7 +110,7 @@ module.exports = {
       title: 'Software Development',
       description: `
         <p>Programmo dalle scuole superiori per progetti production-ready personali, lavorativi e accademici.</p>
-        <p>Tecnologie principali: Python, NodeJS, C#, Java, Open Source.</p>
+        <p>Tecnologie principali: Kotlin, Python, C#, Java, Open Source.</p>
         <p>Lavorato con: Firebase, Scala, MATLAB, C++, Ruby (on Rails), SQL.</p>`
     }, {
       title: 'DevOps',
@@ -145,7 +145,7 @@ module.exports = {
   ],
   coding: {
     title: 'Coding.',
-    description: 'Contribuisco occasionalmente a progetti open source su Github, ma principalmente spendo il mio tempo a cercare risposte su stackoverflow. Ho anche alcuni progetti personali che non ho mai il tempo di perseguire, eccone alcuni.',
+    description: 'Continuo sempre a studiare per migliorarmi a programmare. In questo momento sto leggendo Dive Into Design Patterns di Alexander Shvets e Clean Architecture di Uncle Bob. Contribuisco occasionalmente a progetti open source su Github, e ho anche alcuni progetti personali che non ho mai il tempo di perseguire. Eccone alcuni.',
     items: [
       {
         title: 'telereddit',

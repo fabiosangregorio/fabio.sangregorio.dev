@@ -1,8 +1,8 @@
 module.exports = {
   lang: 'en',
   meta: {
-    title: 'developer, student and ski lover',
-    description: 'I’m a software engineer currently working as an Android Engineer in Milan, Italy. I can help you with building all-things software and web.'
+    title: 'I’m Fabio, I’m a software engineer.',
+    description: 'I’m currently working as an Android Engineer at Bending Spoons in Milan, Italy. I can help you with building all-things software and web. How can I help you?'
   },
   header: {
     langlink: 'it',
@@ -17,9 +17,9 @@ module.exports = {
   home: {
     title: {
       line1: 'Hey there!',
-      line2: 'I’m Fabio, software engineer and ski lover.',
+      line2: 'I’m Fabio, I’m a software engineer.',
     },
-    subtitle: 'I’m a software engineer currently working as an Android Engineer in Milan, Italy. I can help you with building all-things software and web. <br>How can I help you?',
+    subtitle: 'I’m currently working as an Android Engineer at Bending Spoons in Milan, Italy. I can help you with building all-things software and web. <br>How can I help you?',
     jobs: 'I worked with amazing people.',
     education: 'I also had brilliant professors.',
     skills: 'They enabled me to learn some powerful skills.',
@@ -39,8 +39,8 @@ module.exports = {
       line2: 'Seriously, more than 8,000 episodes registered on'
     },
     description: `
-    Being born in Bergamo, italian is my mother tongue. I also know English fairly well though, so sometimes I help out translating the web, with tools such as Wikipedia and Google Translate Community.<br>
-    I love working out at the gym in the morning, before heading to work. I love organization. I love coffee. I love matte black.
+    Italian is my mother tongue (I was born in Bergamo!). I also know English fairly well though, so sometimes I help out translating the web, with tools such as Wikipedia and Google Translate Community.<br>
+    I love working out at the gym in the morning, before heading to work. I love organization. I love coffee (as well as tea!). I love matte black.
     `
   },
   jobs: [
@@ -50,7 +50,7 @@ module.exports = {
       role: 'Android Engineer',
       start: 'Sept. 2021',
       end: 'Current',
-      description: "I'm just now starting to work at Bending Spoons as an Android Engineer. I will be developing beautiful apps in Kotlin. I'm really excited!"
+      description: 'Right now I’m working as an Android engineer at Bending Spoons, developing the beautiful <a href="https://spliceapp.com/" target="_blank" class="link--decorate">Splice</a> app: one of the most powerful video editors for mobile, used by millions of people. It’s been a wild ride so far, I’m extremely excited!'
     }, {
       title: 'SAP Labs France',
       link: 'https://www.sap.com/',
@@ -110,7 +110,7 @@ module.exports = {
       title: 'Software Development',
       description: `
         <p>I have been coding since high school for personal, work and academic production-ready projects.</p>
-        <p>Main technologies: Python, NodeJS, C#, Java, Open Source.</p>
+        <p>Main technologies: Kotlin, Python, C#, Java, Open Source.</p>
         <p>Worked with: Firebase, Scala, MATLAB, C++, Ruby (on Rails), SQL.</p>`
     }, {
       title: 'DevOps',
@@ -121,7 +121,7 @@ module.exports = {
     }, {
       title: 'Soft Skills',
       description: `
-        <p>I love being organized, and time mangement is a must if working while studying for university.</p>
+        <p>I love being organized, and time mangement is a must, especially when working while studying for university.</p>
         <p>Organization (Notion freak), flexibility, time management, teamwork.</p>`
     }
   ],
@@ -146,7 +146,7 @@ module.exports = {
   ],
   coding: {
     title: 'Coding.',
-    description: 'I occasionally contribute to open source projects on Github, but mainly I spend my time searching for answers on stackoverflow. I also have some personal projects that I never have time to pursue, here are some of them.',
+    description: 'I always keep on studying to get better at coding. Right now I’m reading Dive Into Design Patterns by Alexander Shvets and Clean Architecture by Uncle Bob. I occasionally contribute to open source projects on Github, and I also have some personal projects that I never have time to pursue. Here are some of them.',
     items: [
       {
         title: 'telereddit',
