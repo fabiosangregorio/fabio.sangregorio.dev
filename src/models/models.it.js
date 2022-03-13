@@ -127,6 +127,12 @@ module.exports = {
   ],
   competitions: [
     {
+      year: '2022',
+      title: '47esimo posto in classifica mondiale alla Reply Code Challenge',
+      description: `
+      Completata la coding challenge della durata di 4 ore con il team Green.Code, totalizzando 33.061.092 punti e posizionandoci 47esimi in classifica globale. La soluzione è stata sviluppata in Python. <a href="https://github.com/GiorgioBertolotti/reply-qualification-round-2022" target="_blank" class="link--decorate">Qui</a> si può trovare la repository della soluzione.`
+    },
+    {
       year: '2020',
       title: 'Team vincitore dell\'hackathon "Download Innovation',
       description: `
