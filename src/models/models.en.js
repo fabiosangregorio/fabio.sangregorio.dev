@@ -47,7 +47,7 @@ module.exports = {
     {
       title: 'Bending Spoons',
       link: 'https://www.bendingspoons.com/',
-      role: 'Android Engineer',
+      role: 'Backend & Android Engineer',
       start: 'Sept. 2021',
       end: 'Current',
       description: 'I worked as an Android Software Engineer at Bending Spoons, developing the beautiful <a href="https://spliceapp.com/" target="_blank" class="link--decorate">Splice</a> app: one of the most powerful video editors for mobile, used by millions of people. I also worked on <a href="https://alightmotion.com/" target="_blank" class="link--decorate">Alight Motion</a>, a powerful animation editor app. I’m now moving to backend engineering, working in the <a href="https://evernote.com/" target="_blank" class="link--decorate">Evernote</a> team to build the most well-known note-taking app out there. It’s gonna be so exciting!''
