@@ -50,7 +50,7 @@ module.exports = {
       role: 'Android Engineer',
       start: 'Sept. 2021',
       end: 'Current',
-      description: 'Right now I’m working as an Android engineer at Bending Spoons, developing the beautiful <a href="https://spliceapp.com/" target="_blank" class="link--decorate">Splice</a> app: one of the most powerful video editors for mobile, used by millions of people. It’s been a wild ride so far, I’m extremely excited!'
+      description: 'I worked as an Android Software Engineer at Bending Spoons, developing the beautiful <a href="https://spliceapp.com/" target="_blank" class="link--decorate">Splice</a> app: one of the most powerful video editors for mobile, used by millions of people. I also worked on <a href="https://alightmotion.com/" target="_blank" class="link--decorate">Alight Motion</a>, a powerful animation editor app. I’m now moving to backend engineering, working in the <a href="https://evernote.com/" target="_blank" class="link--decorate">Evernote</a> team to build the most well-known note-taking app out there. It’s gonna be so exciting!''
     }, {
       title: 'SAP Labs France',
       link: 'https://www.sap.com/',
