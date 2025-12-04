@@ -1,5 +1,5 @@
 'use client';
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, ReactNode, useCallback } from 'react';
 
 interface ThemeContextType {
   isDarkTheme: boolean;
@@ -8,35 +8,58 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+const STORAGE_KEY = 'theme-preference';
+
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
-  const [isInitialized, setIsInitialized] = useState(false);
 
-  useEffect(() => {
-    const stored = localStorage.getItem('dark-theme-enabled');
-    if (stored === 'true') {
-      setIsDarkTheme(true);
+  const applyTheme = useCallback((dark: boolean) => {
+    setIsDarkTheme(dark);
+    if (dark) {
       document.body.classList.add('dark-theme');
+    } else {
+      document.body.classList.remove('dark-theme');
     }
-    setIsInitialized(true);
+    // Update meta tags for browser chrome
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', dark ? '#121212' : '#ffffff');
+    }
+    const metaColorScheme = document.querySelector('meta[name="color-scheme"]');
+    if (metaColorScheme) {
+      metaColorScheme.setAttribute('content', dark ? 'dark' : 'light');
+    }
   }, []);
 
+  useEffect(() => {
+    // Check for stored user preference first
+    const stored = localStorage.getItem(STORAGE_KEY);
+
+    if (stored !== null) {
+      // User has explicitly set a preference
+      applyTheme(stored === 'dark');
+    } else {
+      // Fall back to system preference
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      applyTheme(systemPrefersDark);
+    }
+
+    // Listen for system preference changes - always follow and clear any override
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (e: MediaQueryListEvent) => {
+      localStorage.removeItem(STORAGE_KEY);
+      applyTheme(e.matches);
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, [applyTheme]);
+
   const toggleTheme = () => {
-    setIsDarkTheme(prev => {
-      const newValue = !prev;
-      localStorage.setItem('dark-theme-enabled', String(newValue));
-      if (newValue) {
-        document.body.classList.add('dark-theme');
-      } else {
-        document.body.classList.remove('dark-theme');
-      }
-      // Update theme-color meta tag
-      const metaThemeColor = document.querySelector('meta[name="theme-color"]');
-      if (metaThemeColor) {
-        metaThemeColor.setAttribute('content', newValue ? '#121212' : '#ffffff');
-      }
-      return newValue;
-    });
+    const newValue = !isDarkTheme;
+    // Store explicit user preference
+    localStorage.setItem(STORAGE_KEY, newValue ? 'dark' : 'light');
+    applyTheme(newValue);
   };
 
   return (

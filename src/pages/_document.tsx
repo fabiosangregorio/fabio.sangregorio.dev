@@ -13,15 +13,21 @@ export default function Document() {
         <meta name="apple-mobile-web-app-title" content="Fabio." />
         <meta name="application-name" content="Fabio." />
         <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="color-scheme" content="light dark" />
 
-        {/* Prevent flash of wrong theme */}
+        {/* Prevent flash of wrong theme - checks stored preference, then system preference */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
                 try {
-                  if (localStorage.getItem('dark-theme-enabled') === 'true') {
+                  var stored = localStorage.getItem('theme-preference');
+                  var isDark = stored === 'dark' || (stored === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                  if (isDark) {
                     document.documentElement.classList.add('dark-theme');
+                    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', '#121212');
+                    document.querySelector('meta[name="color-scheme"]')?.setAttribute('content', 'dark');
                   }
                 } catch (e) {}
               })();
