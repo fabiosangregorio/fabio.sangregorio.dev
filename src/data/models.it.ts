@@ -4,7 +4,7 @@ export const modelsIt: SiteModel = {
   lang: 'it',
   meta: {
     title: 'developer, studente e amante degli sci',
-    description: 'Sono un ingengere informatico e sto attualmente lavorando come Android Engineer a Milano. Posso aiutarti a costruire qualsiasi cosa software e web.',
+    description: 'Sono un ingengere informatico e sto attualmente lavorando come Software Engineer a Milano. Posso aiutarti a costruire qualsiasi cosa software e web.',
   },
   header: {
     langlink: 'en',
@@ -21,7 +21,7 @@ export const modelsIt: SiteModel = {
       line1: 'Hey!',
       line2: 'Sono Fabio, e sono un ingegnere informatico.',
     },
-    subtitle: 'Sto attualmente lavorando come Android Engineer a Bending Spoons a Milano. Posso aiutarti a costruire qualsiasi cosa software e web.<br>Come posso aiutarti?',
+    subtitle: 'Sto attualmente lavorando come Software Engineer a Bending Spoons a Milano. Posso aiutarti a costruire qualsiasi cosa software e web.<br>Come posso aiutarti?',
     jobs: 'Ho lavorato con persone meravigliose.',
     education: 'Ho anche avuto professori brillanti.',
     skills: 'Mi hanno permesso di apprendere grandi abilità.',
@@ -52,7 +52,7 @@ export const modelsIt: SiteModel = {
       role: 'Backend & Android Engineer',
       start: 'Sept. 2021',
       end: 'Corrente',
-      description: 'Ho lavorato come Android Engineer a Bending Spoons, sviluppando la bellissima app <a href="https://spliceapp.com/" target="_blank" class="link--decorate">Splice</a>: uno dei video editor più potenti per mobile, usato da milioni di persone. Ho anche lavorato ad <a href="https://alightmotion.com/" target="_blank" class="link--decorate">Alight Motion</a>, un potente editor di animazioni. Ora mi sto muovendo a Backend Engineering, lavorando nel team <a href="https://evernote.com/" target="_blank" class="link--decorate">Evernote</a> per sull\'app di note più conosciuta. Sarà estremamente emozionante!\''
+      description: 'Ho lavorato come Android Software Engineer a Bending Spoons, sviluppando la bellissima app <a href="https://spliceapp.com/" target="_blank" class="link--decorate">Splice</a>: uno dei video editor più potenti per mobile, usato da milioni di persone. Ho anche lavorato ad <a href="https://alightmotion.com/" target="_blank" class="link--decorate">Alight Motion</a>, un potente editor di animazioni. Mi sono ora spostato a backend engineering nel team <a href="https://evernote.com/" target="_blank" class="link--decorate">Evernote</a>, lavorando negli squad Platform, Reliability e Product per costruire l\'app di note più conosciuta.'
     }, {
       title: 'SAP Labs France',
       link: 'https://www.sap.com/',
@@ -145,7 +145,7 @@ export const modelsIt: SiteModel = {
   ],
   coding: {
     title: 'Coding.',
-    description: "Continuo sempre a studiare per migliorarmi a programmare. In questo momento sto leggendo Dive Into Design Patterns di Alexander Shvets e Clean Architecture di Uncle Bob. Contribuisco occasionalmente a progetti open source su Github, e ho anche alcuni progetti personali che non ho mai il tempo di perseguire. Eccone alcuni.",
+    description: "Continuo sempre a studiare per migliorarmi a programmare. In questo momento sto leggendo A Philosophy of Software Design di John Ousterhout e The Effective Engineer di Edmond Lau. Contribuisco occasionalmente a progetti open source su Github, e ho anche alcuni progetti personali che non ho mai il tempo di perseguire. Eccone alcuni.",
     items: [
       {
         title: 'telereddit',
