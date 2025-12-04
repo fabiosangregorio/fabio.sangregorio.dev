@@ -1,6 +1,24 @@
+# Dependencies
 node_modules
-.sass-cache
+.pnp
+.pnp.js
+
+# Build outputs
+out
+.next
 dist
+
+# Cache and local
+.sass-cache
 .vscode
 *.log
+.DS_Store
+
+# Package lock (optional - remove this line if you want to track it)
 package-lock.json
+
+# Next.js
+.vercel
+
+# Testing
+coverage
