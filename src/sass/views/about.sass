@@ -50,6 +50,22 @@
     a
       font-size: 1rem
 
+// Swiper carousel styles when enabled (tablet and below)
+@media screen and (max-width: 991px)
+  .about
+    .me__items.swiper
+      display: block
+      overflow: hidden
+      .swiper-wrapper
+        display: flex
+      .swiper-slide
+        width: 100%
+        flex-shrink: 0
+      .me__item
+        width: 100%
+        flex: none
+        max-width: none
+
 @media screen and (max-width: 767px)
   .about
     .atf
@@ -78,6 +94,6 @@
         display: block
     .me__item-text
       font-size: 0.875rem
-    .me__item-link 
+    .me__item-link
       a
         font-size: 0.8125rem

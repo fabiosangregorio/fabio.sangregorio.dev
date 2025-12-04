@@ -67,6 +67,8 @@
   .experience__dates
     line-height: 1
     text-align: right
+    display: flex
+    flex-direction: column-reverse
 
   .experience__end-date
     font-size: 1.125rem
@@ -79,15 +81,28 @@
     font-size: 1.125rem
     margin-top: 1.1375rem
 
-  .js-experience-animate
+  // Inner wrappers for animation
+  .experience__dates-inner
+    display: flex
+    flex-direction: column-reverse
+    overflow: hidden
+
+  .experience__description-inner
+    overflow: hidden
+
+  // Hidden by default on desktop
+  .experience__dates,
+  .experience__description
+    display: grid
+    grid-template-rows: 0fr
     opacity: 0
-    visibility: hidden
-    height: 0
-    transition: all .3s ease-in-out
-  
-  .js-experiences-open .js-experience-animate
+    transition: grid-template-rows 0.3s ease-in-out, opacity 0.3s ease-in-out
+
+  // Shown when open on desktop
+  .is-open .experience__dates,
+  .is-open .experience__description
+    grid-template-rows: 1fr
     opacity: 1
-    visibility: visible
 
   .skills__h1
     max-width: 43.75rem
@@ -239,24 +254,32 @@
       font-size: 0.875rem
       line-height: 2
     .experience__dates
+      // Always visible on mobile
+      display: block
+      grid-template-rows: unset
+      opacity: 1
       color: #777
       white-space: nowrap
       text-transform: uppercase
-      margin-bottom: 0.3125rem
-      order: 1
+      margin-left: 0.625rem
+    .experience__dates-inner
+      display: flex
+      flex-direction: column
+    .experience__description
+      // Still toggleable on mobile
+      display: grid
+      margin-top: 0.75rem
     .experience__position
-      order: 2
+      flex: 1
     .experience__start-date
-      display: inline-block
-      margin-right: 0.3125rem
       font-size: 0.75rem
     .experience__end-date
-      display: inline-block
       font-size: 0.75rem
       font-weight: 600
-      order: 1
+      margin-left: 0.5rem
     .experience__header
-      flex-flow: column
+      flex-flow: row wrap
+      align-items: baseline
     .visit__link
       position: absolute
       bottom: 0.625rem
