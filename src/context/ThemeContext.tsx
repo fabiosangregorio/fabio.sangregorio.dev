@@ -44,13 +44,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       applyTheme(systemPrefersDark);
     }
 
-    // Listen for system preference changes (only applies if no stored preference)
+    // Listen for system preference changes - always follow and clear any override
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (e: MediaQueryListEvent) => {
-      // Only follow system if user hasn't set explicit preference
-      if (localStorage.getItem(STORAGE_KEY) === null) {
-        applyTheme(e.matches);
-      }
+      localStorage.removeItem(STORAGE_KEY);
+      applyTheme(e.matches);
     };
 
     mediaQuery.addEventListener('change', handleChange);
