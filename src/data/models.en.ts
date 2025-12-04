@@ -4,7 +4,7 @@ export const modelsEn: SiteModel = {
   lang: 'en',
   meta: {
     title: "I'm Fabio, I'm a software engineer.",
-    description: "I'm currently working as an Android Engineer at Bending Spoons in Milan, Italy. I can help you with building all-things software and web. How can I help you?"
+    description: "I'm currently working as a Software Engineer at Bending Spoons in Milan, Italy. I can help you with building all-things software and web. How can I help you?"
   },
   header: {
     langlink: 'it',
@@ -21,7 +21,7 @@ export const modelsEn: SiteModel = {
       line1: 'Hey there!',
       line2: "I'm Fabio, I'm a software engineer.",
     },
-    subtitle: "I'm currently working as an Android Engineer at Bending Spoons in Milan, Italy. I can help you with building all-things software and web. <br>How can I help you?",
+    subtitle: "I'm currently working as a Software Engineer at Bending Spoons in Milan, Italy. I can help you with building all-things software and web. <br>How can I help you?",
     jobs: 'I worked with amazing people.',
     education: 'I also had brilliant professors.',
     skills: 'They enabled me to learn some powerful skills.',
@@ -52,7 +52,7 @@ export const modelsEn: SiteModel = {
       role: 'Backend & Android Engineer',
       start: 'Sept. 2021',
       end: 'Current',
-      description: 'I worked as an Android Software Engineer at Bending Spoons, developing the beautiful <a href="https://spliceapp.com/" target="_blank" class="link--decorate">Splice</a> app: one of the most powerful video editors for mobile, used by millions of people. I also worked on <a href="https://alightmotion.com/" target="_blank" class="link--decorate">Alight Motion</a>, a powerful animation editor app. I\'m now moving to backend engineering, working in the <a href="https://evernote.com/" target="_blank" class="link--decorate">Evernote</a> team to build the most well-known note-taking app out there. It\'s gonna be so exciting!\''
+      description: 'I worked as an Android Software Engineer at Bending Spoons, developing the beautiful <a href="https://spliceapp.com/" target="_blank" class="link--decorate">Splice</a> app: one of the most powerful video editors for mobile, used by millions of people. I also worked on <a href="https://alightmotion.com/" target="_blank" class="link--decorate">Alight Motion</a>, a powerful animation editor app. I\'ve now moved to backend engineering in the <a href="https://evernote.com/" target="_blank" class="link--decorate">Evernote</a> team, working in the Platform, Reliability, and Product squads to build the most well-known note-taking app out there.'
     }, {
       title: 'SAP Labs France',
       link: 'https://www.sap.com/',
@@ -146,7 +146,7 @@ export const modelsEn: SiteModel = {
   ],
   coding: {
     title: 'Coding.',
-    description: "I always keep on studying to get better at coding. Right now I'm reading Dive Into Design Patterns by Alexander Shvets and Clean Architecture by Uncle Bob. I occasionally contribute to open source projects on Github, and I also have some personal projects that I never have time to pursue. Here are some of them.",
+    description: "I always keep on studying to get better at coding. Right now I'm reading A Phylosophy of Software Design by John Ousterhout and The Effective Engineer by Edmond Lau. I occasionally contribute to open source projects on Github, and I also have some personal projects that I never have time to pursue. Here are some of them.",
     items: [
       {
         title: 'telereddit',
