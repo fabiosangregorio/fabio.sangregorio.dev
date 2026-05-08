@@ -23,6 +23,8 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_GA_ID: G-9R7SGCJGKQ
 
       - name: Add .nojekyll
         run: touch out/.nojekyll
