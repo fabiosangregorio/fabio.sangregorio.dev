@@ -193,7 +193,7 @@ export const modelsEn: SiteModel = {
           description: 'An artist with his artwork'
         },
         link: {
-          url: 'https://photography.fabiosangregorio.tk',
+          url: '/photography',
           title: 'fabiosangregorio/photography'
         }
       }, {

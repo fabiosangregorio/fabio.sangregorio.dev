@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync:instagram": "node scripts/fetch-instagram.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.6",
@@ -14,14 +15,18 @@
     "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "swiper": "^12.0.3"
+    "react-photo-album": "^3.6.0",
+    "swiper": "^12.0.3",
+    "yet-another-react-lightbox": "^3.32.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
     "@types/node": "^20.10.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
+    "image-size": "^2.0.2",
     "sass": "^1.69.5",
+    "sharp": "^0.35.2",
     "typescript": "^5.3.2"
   }
 }

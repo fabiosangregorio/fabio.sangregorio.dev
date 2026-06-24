@@ -58,6 +58,14 @@ export interface AboutSection {
   items: AboutItem[];
 }
 
+export interface InstagramPhoto {
+  id: string;
+  src: string;
+  thumb: string;
+  width: number;
+  height: number;
+}
+
 export interface SiteModel {
   lang: 'en' | 'it';
   meta: Meta;

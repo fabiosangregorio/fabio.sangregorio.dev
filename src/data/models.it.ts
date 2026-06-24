@@ -192,7 +192,7 @@ export const modelsIt: SiteModel = {
           description: 'Un artista con la sua opera'
         },
         link: {
-          url: 'https://photography.fabiosangregorio.tk',
+          url: '/photography',
           title: 'fabiosangregorio/photography'
         }
       }, {

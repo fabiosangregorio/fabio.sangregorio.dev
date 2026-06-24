@@ -1,0 +1,14 @@
+#:schema https://conductor.build/schemas/settings.repo.schema.json
+
+[scripts]
+# Install dependencies in each new workspace. Uses `npm install` (not `npm ci`)
+# because package-lock.json is gitignored and is not copied into fresh worktrees.
+setup = "npm install"
+
+# Start the Next.js dev server on the workspace's assigned port so multiple
+# workspaces can run side by side without colliding.
+run = "npm run dev -- --port $CONDUCTOR_PORT"
+
+# Static export site with no shared local services, DB, or fixed port —
+# workspaces are safe to run at the same time.
+run_mode = "concurrent"
