@@ -19,6 +19,10 @@ package-lock.json
 
 # Next.js
 .vercel
+*.tsbuildinfo
+
+# Local secrets (Instagram sync token)
+.env*.local
 
 # Testing
 coverage
